@@ -1,0 +1,14 @@
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\bin\Debug\netcoreapp2.2\AIForChildren.deps.json
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\bin\Debug\netcoreapp2.2\AIForChildren.runtimeconfig.json
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\bin\Debug\netcoreapp2.2\AIForChildren.runtimeconfig.dev.json
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\bin\Debug\netcoreapp2.2\AIForChildren.dll
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.csprojAssemblyReference.cache
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.csproj.CoreCompileInputs.cache
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.RazorAssemblyInfo.cache
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.RazorAssemblyInfo.cs
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.AssemblyInfoInputs.cache
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.AssemblyInfo.cs
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.RazorTargetAssemblyInfo.cache
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\bin\Debug\netcoreapp2.2\AIForChildren.pdb
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.dll
+C:\Users\BHR\source\repos\AIForChildren\AIForChildren\obj\Debug\netcoreapp2.2\AIForChildren.pdb
