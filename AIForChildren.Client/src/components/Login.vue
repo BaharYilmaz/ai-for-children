@@ -1,5 +1,4 @@
-  <!-- Content -->
-
+<template>
   <div class="authentication-wrapper authentication-3">
     <div class="authentication-inner">
 
@@ -71,5 +70,11 @@
       <!-- / Form container -->
     </div>
   </div>
-    <!-- / Content -->
 
+</template>
+
+<script>
+export default {
+  name:"login"
+}
+</script>
