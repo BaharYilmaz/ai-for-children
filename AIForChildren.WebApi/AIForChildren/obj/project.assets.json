@@ -12984,11 +12984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BHR\\source\\repos\\AIForChildren\\AIForChildren\\AIForChildren.csproj",
+      "projectUniqueName": "D:\\GitHub\\ai-for-children\\AIForChildren.WebApi\\AIForChildren\\AIForChildren.csproj",
       "projectName": "AIForChildren",
-      "projectPath": "C:\\Users\\BHR\\source\\repos\\AIForChildren\\AIForChildren\\AIForChildren.csproj",
+      "projectPath": "D:\\GitHub\\ai-for-children\\AIForChildren.WebApi\\AIForChildren\\AIForChildren.csproj",
       "packagesPath": "C:\\Users\\BHR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BHR\\source\\repos\\AIForChildren\\AIForChildren\\obj\\",
+      "outputPath": "D:\\GitHub\\ai-for-children\\AIForChildren.WebApi\\AIForChildren\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
