@@ -4,15 +4,15 @@
 
 
 ----------------------------------------------
-*Bu alan proje public olduğunda silinecektir.
+## Bu alan proje public olduğunda silinecektir.
 
 ## Veritabanı bağlantı işlemi
 
 Öncelikle Server Explorer kısmından kullanacağımız azure hesabını ekleyeceğiz.
 ![serverEx](https://user-images.githubusercontent.com/48556212/78459300-ad35bd00-76c0-11ea-856d-46de0665b9fc.PNG)
 
-Kullanıncı Adi : 182803002@ogr.cbu.edu.tr
-Şifre : 38107081974
+- Kullanıncı Adi : 182803002@ogr.cbu.edu.tr
+- Şifre : 38107081974
 
 **Not: hesap sahibi şifresini değiştirme hakkına sahiptir.
 
@@ -25,7 +25,7 @@ Giriş yaptıktan sonra gelen ekranda gerekli veritabanı seçilerek sunucuya ba
 
 ![login](https://user-images.githubusercontent.com/48556212/78459443-b4a99600-76c1-11ea-91f8-fb2c353a394d.PNG)
 
-Password : 7dr87d7dr.
+- Password : 7dr87d7dr.
 
 Artık veritabanı uygulamaya bağlanmış durumdadır.
 
