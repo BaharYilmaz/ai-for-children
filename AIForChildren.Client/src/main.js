@@ -8,10 +8,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Icon fonts 
-import "./assets/vendor/fonts/fontawesome.css"
+/*import "./assets/vendor/fonts/fontawesome.css"
 import "./assets/vendor/fonts/ionicons.css"
 import "./assets/vendor/fonts/open-iconic.css"
-import "./assets/vendor/fonts/pe-icon-7-stroke.css"
+import "./assets/vendor/fonts/pe-icon-7-stroke.css"*/
 
 // Core stylesheets 
 import "./assets/vendor/css/rtl/appwork.css"
