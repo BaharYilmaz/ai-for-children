@@ -13,6 +13,8 @@ namespace AIForChildren.Models
         public byte[] SifreHash { get; set; }
         public byte[] SifreSalt { get; set; }
 
+        //public List<Oyun> Oyunlar { get; set; }
+
 
 
     }
