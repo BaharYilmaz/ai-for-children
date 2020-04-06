@@ -1,6 +1,12 @@
 # client
 
-## Project setup
+### Yarn install with npm
+```
+npm install -g yarn
+```
+
+### Project setup
+
 ```
 yarn install
 ```
@@ -22,3 +28,7 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Not
+
+"/", "/login", "/register"  için yollar tanımlı. Erişim açıktır.
