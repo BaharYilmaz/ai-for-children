@@ -1,24 +1,23 @@
 <template>
   <div class="authentication-wrapper authentication-3">
     <div class="authentication-inner">
+
       <!-- Side container -->
       <!-- Do not display the container on extra small, small and medium screens -->
-      <div class="image">
-        <div class="d-none d-lg-flex col-lg-8 align-items-center ui-bg-cover ui-bg-overlay-container p-5" style="background-image: url('../assets/img/bg/c1.jpg');">
-          <div class="ui-bg-overlay bg-dark opacity-50"></div>
-          <div class="text">
-            <!-- Text -->
-            <div class="w-100 text-white px-5">
-              <h6 class="display-2 font-weight-bolder mb-4">Artificial Intelligence<br>For Kids</h6>
-              <div class="text-large font-weight-light">
-                Çocuklarımız yapay zeka ile büyüyor.
-              </div>
-            </div>
+      <div class="d-none d-lg-flex col-lg-8 align-items-center ui-bg-cover ui-bg-overlay-container p-5" :style="cssProps">
+        <div class="ui-bg-overlay bg-dark opacity-50"></div>
+
+        <!-- Text -->
+        <div class="w-100 text-white px-5">
+          <h1 class="display-2 font-weight-bolder mb-4">ARTIFICIAL INTELLIGENCE<br>FOR KIDS</h1>
+          <div class="text-large font-weight-light">
+            Çocuklar yapay zeka ile büyüyor.
           </div>
-          <!-- /.Text -->
         </div>
-        <!-- / Side container -->
+        <!-- /.Text -->
       </div>
+      <!-- / Side container -->
+
       <!-- Form container -->
       <div class="d-flex col-lg-4 align-items-center bg-white p-5">
         <!-- Inner container -->
@@ -64,29 +63,27 @@
             <div class="text-center text-muted">
               Don't have an account yet? <a href="/register">Sign Up</a>
             </div>
+
           </div>
         </div>
       </div>
       <!-- / Form container -->
+
     </div>
   </div>
+
 
 </template>
 
 <script>
 export default {
   name:"login",
-  entry: "../assets/img/bg/c1.jpg"
-  
+  data(){
+      return{
+        cssProps:{
+          backgroundImage:`url(${require('@/assets/img/bg/c1.jpg')})`
+        }
+      }
+    }
 }
 </script>
-<style scoped>
-  .image{
-    background-image: url("../assets/img/bg/c1.jpg");
-    background-image: no-repeat;
-    background-position:center;
-    background-size:100% 100%;
-    width: 1200px;
-  }
-
-</style>

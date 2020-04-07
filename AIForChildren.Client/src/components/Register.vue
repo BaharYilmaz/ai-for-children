@@ -1,25 +1,23 @@
 <template>
      <div class="authentication-wrapper authentication-3">
     <div class="authentication-inner">
-         
+
       <!-- Side container -->
       <!-- Do not display the container on extra small, small and medium screens -->
-      <div class="image">
-      <div class="d-none d-lg-flex col-lg-8 align-items-center ui-bg-cover ui-bg-overlay-container p-5" style="background-image: url('assets/img/bg/21.jpg');">
+      <div class="d-none d-lg-flex col-lg-8 align-items-center ui-bg-cover ui-bg-overlay-container p-5" :style="cssProps">
         <div class="ui-bg-overlay bg-dark opacity-50"></div>
 
         <!-- Text -->
         <div class="w-100 text-white px-5">
-          <h1 class="display-2 font-weight-bolder mb-4">JOIN OUR<br>COMMUNITY</h1>
+          <h1 class="display-2 font-weight-bolder mb-4">ARTIFICIAL INTELLIGENCE<br>FOR KIDS</h1>
           <div class="text-large font-weight-light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu gravida faucibus. Suspendisse viverra pharetra purus. Proin fringilla ac lorem at sagittis. Proin tincidunt dui et nunc ultricies dignissim.
+            Çocuklar yapay zeka ile büyüyor.
           </div>
         </div>
         <!-- /.Text -->
       </div>
-      </div>
       <!-- / Side container -->
-
+      
       <!-- Form container -->
       <div class="d-flex col-lg-4 align-items-center bg-white p-5">
         <!-- Inner container -->
@@ -73,21 +71,17 @@
     </div>
   </div>
 
-    
 </template>
 
 <script>
 export default {
-    name:"Register"
+    name:"Register",
+    data(){
+      return{
+        cssProps:{
+          backgroundImage:`url(${require('@/assets/img/bg/c1.jpg')})`
+        }
+      }
+    }
 }
 </script>
-
-<style scoped>
-.image{
-    background-image: url("../assets/img/bg/c1.jpg");
-    background-image: no-repeat;
-    background-position:center;
-    background-size:100% 100%;
-    width: 1200px;
-  }
-</style>

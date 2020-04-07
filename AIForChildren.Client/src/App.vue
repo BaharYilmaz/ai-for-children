@@ -1,17 +1,16 @@
-<template id="app">
-    <!--<div id="app">-->
-    <router-view></router-view>   
-  <!--</div>-->
+<template>
+    <div class="id">
+      <navbar></navbar>
+      <router-view></router-view>   
+    </div>
 </template>
 
 <script>
-//import template2 from "./components/template.vue"
-
+import Navbar from "./components/Navbar.vue"
 
 export default {
   name: 'App',
-  //components: {Home ,Login, Register}
-  
+  components: {Navbar}
 }
 </script>
 
