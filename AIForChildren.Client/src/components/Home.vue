@@ -10,354 +10,162 @@
                 <!-- Content -->
                 <div class="container-fluid flex-grow-1 container-p-y">   
                     <div class="row">
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/1.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Java</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">$15.99</div>
+                                <span class="badge badge-primary">Difficulty: Beginner</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Complete Java Masterclass</a></h5>
-                            <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio ligula, rhoncus scelerisque ullamcorper iaculis.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star half-filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>12h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Car or cup</a></h5>
+                            <p class="text-muted mb-3">Train the computer to be able to sort photos into groups.Teach a computer to recognise pictures of objects</p>
+                            
                         </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--/1 content -->
+                     <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/2.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Backend</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">$44.00</div>
+                                <span class="badge badge-primary">Difficulty: Beginner</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">The Complete Web Developer Course 2.0</a></h5>
-                            <p class="text-muted mb-3">Pellentesque at sodales tortor, eu volutpat metus.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star half-filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>34h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Chameleon</a></h5>
+                            <p class="text-muted mb-3">Make a chameleon in Scratch that changes colour to match its background.Teach a computer to recognise colours</p>
                         </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--/1 content -->
+                     <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/3.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Backend</span>
-                                <span class="badge badge-primary">Python</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">$56.99</div>
+                                <span class="badge badge-primary">Difficulty: Advanced</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Python for Beginners: Learn Python Programming</a></h5>
-                            <p class="text-muted mb-3">Nulla lorem, placerat in ultricies sed, aliquet eu eros. In lacinia porttitor enim vel commodo.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star half-filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>44h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Find It!</a></h5>
+                            <p class="text-muted mb-3">Make a hide-and-seek game for your mobile phone.Teach a computer to recognise pictures</p>
                         </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--/1 content -->
+                    <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/4.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">HTML5</span>
-                                <span class="badge badge-primary">CSS3</span>
-                                <span class="badge badge-primary">JS</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">FREE</div>
+                                <span class="badge badge-primary">Difficulty: Beginner</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Become a Web Developer from Scratch</a></h5>
-                            <p class="text-muted mb-3">Donec gravida id neque nec faucibus. Nam congue leo quis ligula dignissim, id scelerisque ipsum condimentum.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star half-filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>16h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Kiwi or Stoat</a></h5>
+                            <p class="text-muted mb-3">Make a project in Scratch that can recognize animals in photos from conservation sites.Teach a computer to recognize photos of animals</p>
                         </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--/1 content -->
+                    <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/5.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">HTML5</span>
-                                <span class="badge badge-primary">CSS3</span>
-                                <span class="badge badge-primary">JS</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">$14.99</div>
+                                <span class="badge badge-primary">Difficulty: Beginner</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Become a Certified Web Developer</a></h5>
-                            <p class="text-muted mb-3">Vestibulum eget magna eget turpis imperdiet finibus. Maecenas mi velit, varius vel sapien sed, sodales dignissim risus.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star half-filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>17h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Make me happy</a></h5>
+                            <p class="text-muted mb-3">Create a character in Scratch that smiles if you say nice things to it and cries if you say mean things to it.Teach a computer to recognise compliments and insults</p>
                         </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-xl-4">
+                    <!--/1 content -->
+                    <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3" >
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" style="background-image: url('assets/img/bg/6.jpg');">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">React</span>
-                                <span class="badge badge-primary">Redux</span>
-                                <span class="badge badge-primary">MongoDB</span>
-                                <span class="badge badge-primary">NodeJS</span>
-                                </div>
-                                <div class="text-big">
-                                <div class="badge badge-dark font-weight-bold">$66.99</div>
+                                <span class="badge badge-primary">Difficulty: Intermediate</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Full stack Universal React with Redux, Node js and MongoDB</a></h5>
-                            <p class="text-muted mb-3">Integer fringilla varius vestibulum. Quisque efficitur tempor nisl vitae rutrum. Vestibulum et iaculis arcu, vitae placerat lacus.</p>
-                            <div class="media">
-                            <div class="media-body">
-                                <div class="ui-stars">
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                <div class="ui-star filled">
-                                    <i class="ion ion-md-star"></i>
-                                    <i class="ion ion-md-star"></i>
-                                </div>
-                                </div>
-                                <a href="javascript:void(0)" class="text-muted small">55</a>
-                            </div>
-                            <div class="text-muted small">
-                                <i class="ion ion-md-time text-primary"></i>
-                                <span>25h</span>
-                            </div>
-                            </div>
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">School Library</a></h5>
+                            <p class="text-muted mb-3">Create a school librarian in Scratch that suggests who a reading book might be suitable for.Teach a computer to make recommendations</p>
                         </div>
                         </div>
                     </div>
-
+                    <!--/1 content -->
+                     <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
+                        <div class="card mb-4">
+                        <div class="w-100">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
+                                <div class="flex-shrink-1">
+                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Smart Classroom</a></h5>
+                            <p class="text-muted mb-3">Create a smart assistant in Scratch that lets you control virtual devices.Teach a computer to recognise the meaning of your commands</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!--/1 content -->
+                     <!--1 content -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
+                        <div class="card mb-4">
+                        <div class="w-100">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
+                                <div class="flex-shrink-1">
+                                <span class="badge badge-primary">Difficulty: Intermediate</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Sorting Hat</a></h5>
+                            <p class="text-muted mb-3">Create a Sorting Hat like in Harry Potter, that puts you in a school House based on what you say.Teach a computer to recognise use of language</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!--/1 content -->
                     </div>
                     <hr class="border-light mt-2 mb-4">
-                    <nav>
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                        <a class="page-link" href="javascript:void(0)">«</a>
-                        </li>
-                        <li class="page-item active">
-                        <a class="page-link" href="javascript:void(0)">1</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0)">2</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0)">3</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0)">4</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0)">5</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="javascript:void(0)">»</a>
-                        </li>
-                    </ul>
-                    </nav>
+                   
                 </div>
                 <!-- / Content -->
                 </div>
@@ -373,6 +181,13 @@
 
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    data(){
+      return{
+        cssProps:{
+          backgroundImage:`url(${require('@/assets/makemehappy.png')})`
+        }
+      }
+    }
 }
 </script>
