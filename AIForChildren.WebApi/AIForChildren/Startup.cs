@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MusteriPaneli.WebApi.Helpers;
 
 namespace AIForChildren
 {
@@ -31,9 +32,29 @@ namespace AIForChildren
         public void ConfigureServices(IServiceCollection services)
         {
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("appsettings:Token").Value);
-            //db bağlantı
-            services.AddDbContext<DataContext>(x =>
-               x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
+            var connectionString = Environment.GetEnvironmentVariable(Keys.ConnectionString);
+            
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                Console.WriteLine("Connection string is not found in environment variables 'AIFORCHILDREN_CONNECTIONSTRING'. I'm using default connection string.");
+                connectionString = Configuration.GetConnectionString("DefaultConnection");
+            }
+            
+            bool.TryParse(Environment.GetEnvironmentVariable(Keys.TestProject), out var isTestProject);
+
+            if (!isTestProject)
+            {
+                //db bağlantı
+                services.AddDbContext<DataContext>(x =>
+                    x.UseSqlServer(connectionString));
+            }
+            else
+            {
+                services.AddDbContext<DataContext>(x =>
+                    x.UseSqlServer("aiforchildren_test"));
+            }
+           
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(opt =>
             {
@@ -67,7 +88,7 @@ namespace AIForChildren
             }
             else
             {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                // The default HSTS value is 30 days. Yisou may want to change th for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
