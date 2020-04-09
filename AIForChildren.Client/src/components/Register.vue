@@ -41,17 +41,17 @@
             <form class="my-5">
               <div class="form-group">
                 <label class="form-label">İsim</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" v-model="model.kullaniciAdi">
               </div>
               <div class="form-group">
                 <label class="form-label">Email</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" v-model="model.email">
               </div>
               <div class="form-group">
                 <label class="form-label">Şifre</label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" v-model="model.sifre">
               </div>
-              <button type="button" class="btn btn-success btn-block mt-4">Kayıt Ol</button>
+              <button type="button"  @click="save" class="btn btn-success btn-block mt-4">Kayıt Ol</button>
               <div class="text-light small mt-4">
                <!--  By clicking "Sign Up", you agree to our
                 <a href="javascript:void(0)">terms of service and privacy policy</a>. We’ll occasionally send you account related emails.
@@ -75,13 +75,27 @@
 </template>
 
 <script>
+import service from "../services/authentication";
+
 export default {
     name:"Register",
     data(){
       return{
         cssProps:{
           backgroundImage:`url(${require('@/assets/img/bg/c3.png')})`
-        }
+        },
+        model: {
+          kullaniciAdi: "",
+          email: "",
+          sifre: ""
+        },
+        result:{}
+      }
+    },
+     methods: {
+      async save() {
+        var result = await service.save(this.model);
+        this.result = result;
       }
     }
 }
