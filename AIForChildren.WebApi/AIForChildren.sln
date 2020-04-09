@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIForChildren", "AIForChildren\AIForChildren.csproj", "{B310D253-834E-494B-B052-57DDD31D5077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIForChildren.WebApi.Tests", "..\AIForChildren.WebApi.Tests\AIForChildren.WebApi.Tests.csproj", "{89717CA7-836E-4C44-895D-868944850B2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B310D253-834E-494B-B052-57DDD31D5077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B310D253-834E-494B-B052-57DDD31D5077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B310D253-834E-494B-B052-57DDD31D5077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89717CA7-836E-4C44-895D-868944850B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89717CA7-836E-4C44-895D-868944850B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89717CA7-836E-4C44-895D-868944850B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89717CA7-836E-4C44-895D-868944850B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
