@@ -3,6 +3,7 @@ import App from './App.vue'
 import {router} from "./router"
 //Module
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import Notifications from 'vue-notification';
 
 //asset
 import 'bootstrap/dist/css/bootstrap.css'
@@ -14,6 +15,10 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+
+//Notify
+Vue.use(Notifications);
+
 
 // Core stylesheets 
 import "./assets/vendor/css/rtl/bootstrap.css" 

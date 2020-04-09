@@ -1,6 +1,7 @@
 <template>
     <div class="App">
       <navbar></navbar>
+      <notifications/>
       <router-view></router-view>   
       <!--<Footer></Footer>-->
     </div>
