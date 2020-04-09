@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using AIForChildren.Base;
 using AIForChildren.Data;
 using AIForChildren.Dtos;
 using AIForChildren.Models;
@@ -18,7 +19,7 @@ namespace MusteriPaneli.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthController : ApiController
     {
         private IAuthRepository _authRepository;
         private IConfiguration _configuration; //token için
@@ -48,7 +49,7 @@ namespace MusteriPaneli.WebApi.Controllers
             };
 
             var createdUset = await _authRepository.Register(userToCreate, userForRegisterDto.Sifre);
-            return StatusCode(201);
+            return Success("Hoşgeldiniz! Kaydınız başarılı bir şekilde oluşturuldu.",code:201);
         }
 
 
