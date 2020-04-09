@@ -23,6 +23,7 @@ import "./assets/vendor/css/rtl/colors.css"
 import "./assets/vendor/css/rtl/uikit.css"
 import "./assets/css/demo.css"
 
+
 //Libs
 import "./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
 

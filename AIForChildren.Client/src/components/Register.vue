@@ -25,7 +25,7 @@
         <div class="d-flex col-sm-7 col-md-5 col-lg-12 px-0 px-xl-4 mx-auto">
           <div class="w-100">
 
-            <!-- Logo -->
+            <!-- Logo 
             <div class="d-flex justify-content-center align-items-center">
               <div class="ui-w-60">
                 <div class="w-100 position-relative" style="padding-bottom: 54%">
@@ -33,34 +33,35 @@
                 </div>
               </div>
             </div>
-            <!-- / Logo -->
+             / Logo -->
 
-            <h4 class="text-center text-lighter font-weight-normal mt-5 mb-0">Create an Account</h4>
+            <h4 class="text-center text-lighter font-weight-normal mt-5 mb-0">Hesap Oluştur</h4>
 
             <!-- Form -->
             <form class="my-5">
               <div class="form-group">
-                <label class="form-label">Your name</label>
+                <label class="form-label">İsim</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
-                <label class="form-label">Your email</label>
+                <label class="form-label">Email</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
-                <label class="form-label">Password</label>
+                <label class="form-label">Şifre</label>
                 <input type="password" class="form-control">
               </div>
-              <button type="button" class="btn btn-primary btn-block mt-4">Sign Up</button>
+              <button type="button" class="btn btn-success btn-block mt-4">Kayıt Ol</button>
               <div class="text-light small mt-4">
-                By clicking "Sign Up", you agree to our
+               <!--  By clicking "Sign Up", you agree to our
                 <a href="javascript:void(0)">terms of service and privacy policy</a>. We’ll occasionally send you account related emails.
-              </div>
+                -->
+              </div> 
             </form>
             <!-- / Form -->
 
             <div class="text-center text-muted">
-              Already have an account? <a href="/login">Sign In</a>
+              Zaten hesabınız var mı? <a href="/login">Giriş Yap</a>
             </div>
 
           </div>
@@ -79,7 +80,7 @@ export default {
     data(){
       return{
         cssProps:{
-          backgroundImage:`url(${require('@/assets/img/bg/c1.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/bg/c3.png')})`
         }
       }
     }

@@ -25,7 +25,7 @@
         <div class="d-flex col-sm-7 col-md-5 col-lg-12 px-0 px-xl-4 mx-auto">
           <div class="w-100">
 
-            <!-- Logo -->
+            <!-- Logo 
             <div class="d-flex justify-content-center align-items-center">
               <div class="ui-w-60">
                 <div class="w-100 position-relative" style="padding-bottom: 54%">
@@ -33,9 +33,9 @@
                 </div>
               </div>
             </div>
-            <!-- / Logo -->
+           / Logo -->
 
-            <h4 class="text-center text-lighter font-weight-normal mt-5 mb-0">Login to Your Account</h4>
+            <h4 class="text-center text-lighter font-weight-normal mt-5 mb-0">Hesabınıza Giriş Yapın</h4>
 
             <!-- Form -->
             <form class="my-5">
@@ -45,23 +45,23 @@
               </div>
               <div class="form-group">
                 <label class="form-label d-flex justify-content-between align-items-end">
-                  <div>Password</div>
-                  <a href="javascript:void(0)" class="d-block small">Forgot password?</a>
+                  <div>Şifre</div>
+                  <!--<a href="javascript:void(0)" class="d-block small">Forgot password?</a>1-->
                 </label>
                 <input type="password" class="form-control">
               </div>
               <div class="d-flex justify-content-between align-items-center m-0">
                 <label class="custom-control custom-checkbox m-0">
                   <input type="checkbox" class="custom-control-input">
-                  <span class="custom-control-label">Remember me</span>
+                  <!--<span class="custom-control-label">Remember me</span>-->
                 </label>
-                <button type="button" class="btn btn-primary">Sign In</button>
+                <button @click="get()" type="button" class="btn btn-success ">Giriş Yap</button>
               </div>
             </form>
             <!-- / Form -->
 
             <div class="text-center text-muted">
-              Don't have an account yet? <a href="/register">Sign Up</a>
+             Henüz bir hesabınız yok mu? <a href="/register">Kayıt ol</a>
             </div>
 
           </div>
@@ -81,9 +81,14 @@ export default {
   data(){
       return{
         cssProps:{
-          backgroundImage:`url(${require('@/assets/img/bg/c1.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/bg/c3.png')})`
         }
       }
+    },
+  methods:{
+    get(){
+      alert("basladık");
     }
+  }
 }
 </script>

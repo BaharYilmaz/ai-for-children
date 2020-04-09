@@ -11,7 +11,7 @@
                 <div class="container-fluid flex-grow-1 container-p-y">   
                     <div class="row">
                     <!--1 content -->
-                    <div class="col-sm-6 col-lg-3 col-xl-3">
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
