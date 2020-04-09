@@ -11,8 +11,8 @@
 Öncelikle Server Explorer kısmından kullanacağımız azure hesabını ekleyeceğiz.
 ![serverEx](https://user-images.githubusercontent.com/48556212/78459300-ad35bd00-76c0-11ea-856d-46de0665b9fc.PNG)
 
-- Kullanıncı Adi : 182803002@ogr.cbu.edu.tr
-- Şifre : 38107081974
+- Kullanıncı Adi : 172802013@ogr.cbu.edu.tr
+- Şifre : 59P57XZ
 
 **Not: hesap sahibi şifresini değiştirme hakkına sahiptir.
 
