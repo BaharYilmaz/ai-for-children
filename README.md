@@ -25,7 +25,7 @@ Giriş yaptıktan sonra gelen ekranda gerekli veritabanı seçilerek sunucuya ba
 
 ![login](https://user-images.githubusercontent.com/48556212/78459443-b4a99600-76c1-11ea-91f8-fb2c353a394d.PNG)
 
-- Password : 7dr87d7dr.
+- Password : 924884Aa!
 
 Artık veritabanı uygulamaya bağlanmış durumdadır.
 
