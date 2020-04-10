@@ -14,7 +14,7 @@
                     <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssCar">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Beginner</span>
@@ -34,7 +34,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssBukalemun">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Beginner</span>
@@ -53,7 +53,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssFind">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Advanced</span>
@@ -72,7 +72,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssKivi">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Beginner</span>
@@ -91,7 +91,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssHappy">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Beginner</span>
@@ -110,7 +110,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3" >
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssLibrary">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Intermediate</span>
@@ -129,7 +129,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssClassroom">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Beginner</span>
@@ -148,7 +148,7 @@
                     <div class="col-sm-6 col-lg-3 col-xl-3">
                         <div class="card mb-4">
                         <div class="w-100">
-                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssProps">
+                            <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssHat">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
                                 <span class="badge badge-primary">Difficulty: Intermediate</span>
@@ -184,8 +184,29 @@ export default {
     name: "Home",
     data(){
       return{
-        cssProps:{
-          backgroundImage:`url(${require('@/assets/makemehappy.png')})`
+        cssCar:{
+          backgroundImage:`url(${require('@/assets/img/oyunlar/arabaKupa2.jpg')})`
+        },
+        cssBukalemun:{
+          backgroundImage:`url(${require('@/assets/img/oyunlar/bukalemun.jpg')})`
+        },
+        cssFind:{
+          backgroundImage:`url(${require('@/assets/img/oyunlar/findit.jpg')})`
+        },
+        cssKivi:{
+          backgroundImage:`url(${require('@/assets/img/oyunlar/kiviGelincik2.jpg')})`
+        },
+        cssHappy:{
+          backgroundImage:`url(${require('@/assets/img/oyunlar/mutlu.gif')})`
+        },
+        cssLibrary:{
+            backgroundImage:`url(${require('@/assets/img/oyunlar/kütüphane.jpg')})`
+        },
+        cssClassroom:{
+            backgroundImage:`url(${require('@/assets/img/oyunlar/smart.png')})`
+        },
+        cssHat:{
+            backgroundImage:`url(${require('@/assets/img/oyunlar/sapka.jpg')})`
         }
       }
     }

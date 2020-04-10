@@ -6,15 +6,12 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-example-7">
-            <div class="navbar-nav mr-auto">
+            <div class="navbar-nav ml-auto">
             <!--<a class="nav-item nav-link active" href="/">Home</a>-->
             <a class="nav-item nav-link" href="/login">Login</a>
             <a class="nav-item nav-link" href="/register">Register</a>
             </div>
 
-            <span class="navbar-text">
-                AI4K
-            </span>
         </div>
     </nav>
 
