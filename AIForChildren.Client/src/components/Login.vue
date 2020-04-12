@@ -40,22 +40,22 @@
             <!-- Form -->
             <form class="my-5">
               <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="text" class="form-control">
+                <label class="form-label">Kullanıcı Adı</label>
+                <input type="text" class="form-control" v-model="model.kullaniciAdi">
               </div>
               <div class="form-group">
                 <label class="form-label d-flex justify-content-between align-items-end">
                   <div>Şifre</div>
                   <!--<a href="javascript:void(0)" class="d-block small">Forgot password?</a>1-->
                 </label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" v-model="model.sifre">
               </div>
               <div class="d-flex justify-content-between align-items-center m-0">
                 <label class="custom-control custom-checkbox m-0">
                   <input type="checkbox" class="custom-control-input">
                   <!--<span class="custom-control-label">Remember me</span>-->
                 </label>
-                <button @click="get()" type="button" class="btn btn-success ">Giriş Yap</button>
+                <button type="button" @click="login" class="btn btn-success ">Giriş Yap</button>
               </div>
             </form>
             <!-- / Form -->
@@ -76,18 +76,27 @@
 </template>
 
 <script>
+import service from "../services/authentication";
+
 export default {
   name:"login",
   data(){
       return{
         cssProps:{
           backgroundImage:`url(${require('@/assets/img/bg/c3.png')})`
-        }
+        },
+        model:{
+          kullaniciAdi:"",
+          sifre:""
+        },
+        result:{}
       }
     },
   methods:{
-    get(){
-      alert("basladık");
+    async login(){
+      var result = await service.login(this.model);
+      this.result = result;
+      console.log(result);
     }
   }
 }
