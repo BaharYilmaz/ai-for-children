@@ -54,7 +54,7 @@ namespace MusteriPaneli.WebApi.Controllers
 
 
         [HttpPost("login")]
-        public async Task<ActionResult> GirisYap([FromBody] UserForLoginDto userForLoginDto)
+        public async Task<IActionResult> GirisYap([FromBody] UserForLoginDto userForLoginDto)
         {
             var user = await _authRepository.GirisYap(userForLoginDto.KullaniciAdi, userForLoginDto.Sifre);
             if (user==null)
@@ -87,7 +87,9 @@ namespace MusteriPaneli.WebApi.Controllers
 
             //token stringi elde edildi
             var tokenString = tokenHandler.WriteToken(token);
-            return Ok(tokenString);
+            // return Ok(tokenString);
+            return Success("Hoşgeldiniz!",code:200, data:tokenString);
+
 
         }
     }
