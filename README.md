@@ -24,7 +24,7 @@ Sql Server Object Explorer bölümünde tekrar giriş yapmanız istenebilir.
 Giriş yaptıktan sonra gelen ekranda gerekli veritabanı seçilerek sunucuya bağlama işlemi yapılır.
 
 ![login](https://user-images.githubusercontent.com/48556212/78459443-b4a99600-76c1-11ea-91f8-fb2c353a394d.PNG)
-
+- user : AiForChildrenAdmin
 - Password : 924884Aa!
 
 Artık veritabanı uygulamaya bağlanmış durumdadır.
