@@ -17,14 +17,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssCar">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                <span class="badge badge-primary">Zorluk: Başlangıç</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Car or cup</a></h5>
-                            <p class="text-muted mb-3">Train the computer to be able to sort photos into groups.Teach a computer to recognise pictures of objects</p>
+                            <h5 class="mb-3"><a href="/arabaveyafincan" class="text-body">Araba veya Fincan</a></h5>
+                            <p class="text-muted mb-3">Fotoğrafları gruplara ayırabilmek için bilgisayarı eğitin. Nesnelerin resimlerini tanımak için bilgisayara dokunun.</p>
                             
                         </div>
                         </div>
@@ -37,14 +37,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssBukalemun">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                <span class="badge badge-primary">Zorluk: Başlangıç</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Chameleon</a></h5>
-                            <p class="text-muted mb-3">Make a chameleon in Scratch that changes colour to match its background.Teach a computer to recognise colours</p>
+                            <h5 class="mb-3"><a href="/bukalemun" class="text-body">Bukalemun</a></h5>
+                            <p class="text-muted mb-3">Scratch'ta rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın.</p>
                         </div>
                         </div>
                     </div>
@@ -56,14 +56,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssFind">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Advanced</span>
+                                <span class="badge badge-primary">Zorluk: İleri</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Find It!</a></h5>
-                            <p class="text-muted mb-3">Make a hide-and-seek game for your mobile phone.Teach a computer to recognise pictures</p>
+                            <h5 class="mb-3"><a href="/bulonu" class="text-body">Bul onu!</a></h5>
+                            <p class="text-muted mb-3">Cep telefonunuz için bir saklambaç oyunu yapın.</p>
                         </div>
                         </div>
                     </div>
@@ -75,14 +75,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssKivi">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                <span class="badge badge-primary">Zorluk: Başlangıç</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Kiwi or Stoat</a></h5>
-                            <p class="text-muted mb-3">Make a project in Scratch that can recognize animals in photos from conservation sites.Teach a computer to recognize photos of animals</p>
+                            <h5 class="mb-3"><a href="/kiviveyagelincik" class="text-body">Kivi veya Gelincik</a></h5>
+                            <p class="text-muted mb-3">Scratch'ta koruma alanlarındaki fotoğraflardaki hayvanları tanıyabilen bir proje yapın.</p>
                         </div>
                         </div>
                     </div>
@@ -94,14 +94,15 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssHappy">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                <span class="badge badge-primary">Zorluk: Başlangıç</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Make me happy</a></h5>
-                            <p class="text-muted mb-3">Create a character in Scratch that smiles if you say nice things to it and cries if you say mean things to it.Teach a computer to recognise compliments and insults</p>
+                            <h5 class="mb-3"><a href="/benimutluet" class="text-body">Beni mutlu et!</a></h5>
+                            <p class="text-muted mb-3">Scratch'ta hoş şeyler söylersen gülümseyen ve kötü şeyler söylersen ağlayan bir karakter yarat.
+Bir bilgisayara iltifatları ve hakaretleri tanımasını öğretin.</p>
                         </div>
                         </div>
                     </div>
@@ -113,14 +114,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssLibrary">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Intermediate</span>
+                                <span class="badge badge-primary">Zorluk: Orta seviye</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">School Library</a></h5>
-                            <p class="text-muted mb-3">Create a school librarian in Scratch that suggests who a reading book might be suitable for.Teach a computer to make recommendations</p>
+                            <h5 class="mb-3"><a href="/okulkütüphane" class="text-body">Okul kütüphanesi</a></h5>
+                            <p class="text-muted mb-3">Scratch'da okuma kitabının kime uygun olabileceğini öneren bir okul kütüphanecisi oluşturun.</p>
                         </div>
                         </div>
                     </div>
@@ -132,14 +133,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssClassroom">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Beginner</span>
+                                <span class="badge badge-primary">Zorluk: Başlangıç</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Smart Classroom</a></h5>
-                            <p class="text-muted mb-3">Create a smart assistant in Scratch that lets you control virtual devices.Teach a computer to recognise the meaning of your commands</p>
+                            <h5 class="mb-3"><a href="/akıllısınıf" class="text-body">Akıllı Sınıf</a></h5>
+                            <p class="text-muted mb-3">Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın.</p>
                         </div>
                         </div>
                     </div>
@@ -151,14 +152,14 @@
                             <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover" :style="cssHat">
                             <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
                                 <div class="flex-shrink-1">
-                                <span class="badge badge-primary">Difficulty: Intermediate</span>
+                                <span class="badge badge-primary">Zorluk: Orta seviye</span>
                                 </div>
                             </div>
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="mb-3"><a href="javascript:void(0)" class="text-body">Sorting Hat</a></h5>
-                            <p class="text-muted mb-3">Create a Sorting Hat like in Harry Potter, that puts you in a school House based on what you say.Teach a computer to recognise use of language</p>
+                            <h5 class="mb-3"><a href="/sapkasıralama" class="text-body">Sıralama Şapka</a></h5>
+                            <p class="text-muted mb-3">Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin.</p>
                         </div>
                         </div>
                     </div>
@@ -185,19 +186,19 @@ export default {
     data(){
       return{
         cssCar:{
-          backgroundImage:`url(${require('@/assets/img/oyunlar/arabaKupa2.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/oyunlar/araba.jpg')})`
         },
         cssBukalemun:{
-          backgroundImage:`url(${require('@/assets/img/oyunlar/bukalemun.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/oyunlar/bukalemun.png')})`
         },
         cssFind:{
-          backgroundImage:`url(${require('@/assets/img/oyunlar/findit.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/oyunlar/buyutec.png')})`
         },
         cssKivi:{
-          backgroundImage:`url(${require('@/assets/img/oyunlar/kiviGelincik2.jpg')})`
+          backgroundImage:`url(${require('@/assets/img/oyunlar/kiviGelincik.jpg')})`
         },
         cssHappy:{
-          backgroundImage:`url(${require('@/assets/img/oyunlar/mutlu.gif')})`
+          backgroundImage:`url(${require('@/assets/img/oyunlar/mutlu.jpg')})`
         },
         cssLibrary:{
             backgroundImage:`url(${require('@/assets/img/oyunlar/kütüphane.jpg')})`

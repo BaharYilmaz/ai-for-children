@@ -8,8 +8,8 @@
         <div class="collapse navbar-collapse" id="navbar-example-7">
             <div class="navbar-nav ml-auto">
             <!--<a class="nav-item nav-link active" href="/">Home</a>-->
-            <a class="nav-item nav-link" href="/login">Login</a>
-            <a class="nav-item nav-link" href="/register">Register</a>
+            <a class="nav-item nav-link" href="/login">Giriş Yap |</a>
+            <a class="nav-item nav-link" href="/register">Kayıt Ol |</a>
             </div>
 
         </div>
