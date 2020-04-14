@@ -16,6 +16,7 @@ import OkulKutuphane from "./components/oyunlar/OkulKütüphane.vue"
 import SapkaSıralama from "./components/oyunlar/SapkaSıralama.vue"
 import AkıllıSınıf from "./components/oyunlar/AkıllıSınıf.vue"
 
+
 //Router
 export const router =new VueRouter({
     routes:[
@@ -24,7 +25,7 @@ export const router =new VueRouter({
       {path: "/register", component: Register },
 
 
-      {path: "/arabaveyafincan", component: ArabaKupa },
+      {path: "/arabaveyakupa", component: ArabaKupa },
       {path: "/bukalemun", component: Bukalemun },
       {path: "/bulonu", component: BulOnu },
       {path: "/kiviveyagelincik", component: KiviVeyaGelincik},
