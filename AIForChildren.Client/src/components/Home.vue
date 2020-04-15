@@ -52,18 +52,16 @@ export default {
     name: "Home",
     data(){
       return{
-
         oyunlar: [
               {"id":1,"image": require('@/assets/img/oyunlar/araba.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/arabaveyakupa","isim": "Araba veya Kupa","icerik": "Fotoğrafları gruplara ayırabilmek için bilgisayarı eğitin. Nesnelerin resimlerini tanımak için bilgisayara dokunun."},
               {"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Scratch'ta rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
-              {"id":3,"image": require('@/assets/img/oyunlar/buyutec.png'),"zorluk": "Zorluk: İleri","link":"/bulonu","isim": "Bul onu!","icerik": "Cep telefonunuz için bir saklambaç oyunu yapın"},
+              {"id":3,"image": require('@/assets/img/oyunlar/kutuphane2.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/okulkütüphane","isim": "Okul Kütüphanesi","icerik": "Scratch'da okuma kitabının kime uygun olabileceğini öneren bir okul kütüphanecisi oluşturun."},              
               {"id":4,"image": require('@/assets/img/oyunlar/kiviGelincik.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/kiviveyagelincik","isim": "Kivi veya Gelincik","icerik": "Scratch'ta koruma alanlarındaki fotoğraflardaki hayvanları tanıyabilen bir proje yapın."},
-              {"id":5,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Scratch'ta hoş şeyler söylersen gülümseyen ve kötü şeyler söylersen ağlayan bir karakter yarat.Bir bilgisayara iltifatları ve hakaretleri tanımasını öğretin."},
-              {"id":6,"iamge": require('@/assets/img/oyunlar/kutuphane.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/okulkütüphane","isim": "Okul Kütüphanesi","icerik": "Scratch'da okuma kitabının kime uygun olabileceğini öneren bir okul kütüphanecisi oluşturun."},
-              {"id":7,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın."},
-              {"id":8,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Sıralama Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
+              {"id":5,"image": require('@/assets/img/oyunlar/buyutec.png'),"zorluk": "Zorluk: İleri","link":"/bulonu","isim": "Bul onu!","icerik": "Cep telefonunuz için bir saklambaç oyunu yapın"},
+              {"id":6,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Scratch'ta hoş şeyler söylersen gülümseyen ve kötü şeyler söylersen ağlayan bir karakter yarat.Bir bilgisayara iltifatları ve hakaretleri tanımasını öğretin."},
+              {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Sıralama Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
+              {"id":8,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın."},
           ],
-        
       }
        
     }
