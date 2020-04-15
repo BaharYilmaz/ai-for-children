@@ -61,7 +61,7 @@
 								(Yapıldı)</p>
 						</div>
 						<div class="card-body text-warning">
-							<p class="card-text">Bilgisayarın tanımasını istediğiniz şeylerin örneklerini toplayın.</p>
+							<p class="card-text">Bilgisayarın öğrenmesi için karışık biçimde olan önceden tanımlanmış resimlerin bilgisayara öğretilmesi gerekir. Bu işleme makine öğrenmesinde "Train" işlemi denir. Tranin işlemi üç aşamadan oluşur. Bu aşamaları birazdan birlikte göreceğiz.</p>
 						</div>
 						<div class="card-footer bg-transparent border-info text-center">
 							<button class="btn btn-outline-info text-warning" @click="train">Train</button>
@@ -71,7 +71,7 @@
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Test</div>
 						<div class="card-body text-warning">
-							<p class="card-text">Bilgisayarı metni tanıyacak şekilde eğitmek için örnekleri test et.</p>
+							<p class="card-text">Eğitilmiş model üzerinden bilgisayara daha önce hiç görmediği resimler verilir ve bu resimleri doğru tahmin etmesi beklenir. Bir çok denemeden sonra doğru bildiği ve yanlış bildiği resimler üzerinden yüzdesel olarak bir sonuç çıkarılır. Bu sonuç eğitilmiş modelin başarısıdır.</p>
 						</div>
 						<div class="card-footer bg-transparent border-info text-center">
 							<button v-if="egitimSonu" class="btn btn-outline-info text-warning" @click="test">Test</button>
