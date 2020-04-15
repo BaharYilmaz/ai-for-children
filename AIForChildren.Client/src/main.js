@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue' 
+import App from './App.vue'
 import {router} from "./router"
 //Module
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -8,6 +8,8 @@ import Notifications from 'vue-notification';
 //asset
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+//Shared components
+import PageHead from '../src/components/shared/page-head';
 
 Vue.config.productionTip = false
 
@@ -19,9 +21,12 @@ Vue.use(IconsPlugin)
 //Notify
 Vue.use(Notifications);
 
+//Shared Components
+Vue.component('page-head', PageHead);
+
 
 // Core stylesheets 
-import "./assets/vendor/css/rtl/bootstrap.css" 
+import "./assets/vendor/css/rtl/bootstrap.css"
 import "./assets/vendor/css/rtl/appwork.css"
 import "./assets/vendor/css/rtl/theme-corporate.css"
 import "./assets/vendor/css/rtl/colors.css"
