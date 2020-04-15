@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Anasayfa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-example-7">
             <span class="navbar-toggler-icon"></span>
         </button>
