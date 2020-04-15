@@ -158,10 +158,11 @@
 					<div class="text-center" v-if="tekSonuc">
 						<h2 class="text-center bg-success" v-if="secim1Secildi">Tahminimiz: Gülen surat</h2>
 						<h2 class="text-center bg-success" v-if="secim2Secildi">Tahminimiz: Üzgün surat</h2>
+						<fireworks></fireworks>
 						<div class="fixed-bottom mt-5 mb-5">
-                            <p>Tekrar oynamak için sayfayı yenileyin!</p>
-                            <router-link to="/">Anasayfa</router-link>
-                        </div>
+              <p>Tekrar oynamak için sayfayı yenileyin!</p>
+              <router-link to="/">Anasayfa</router-link>
+            </div>
 					</div>
 				</div>
 			</div>
@@ -169,7 +170,7 @@
 
 			<div class="container-fluid" v-if="isTest">
 				<div class="mt-5 mb-5">
-					<h3 v-if="!tumSonuclar" class="text-center bg-info">İSTERSEN SENİN SEÇTİĞİNİ TEST EDEBİLİRİZ</h3>
+					<h3 v-if="!tumSonuclar" class="text-center bg-info">İSTERSEN SENİN SEÇTİĞİN RESMİ TEST EDEBİLİRİZ</h3>
 				</div>
 				<div v-if="!isSecildiMi && !tumSonuclar" class="text-center">
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
