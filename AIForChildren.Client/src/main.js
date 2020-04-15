@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 //Shared components
 import PageHead from '../src/components/shared/page-head';
+import FireWorks from '../src/components/shared/fireworks.vue';
 
 Vue.config.productionTip = false
 
@@ -23,6 +24,7 @@ Vue.use(Notifications);
 
 //Shared Components
 Vue.component('page-head', PageHead);
+Vue.component('fireworks', FireWorks);
 
 
 // Core stylesheets 
