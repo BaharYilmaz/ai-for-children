@@ -16,6 +16,9 @@ namespace AIForChildren.Data
 
         //Model klasöründeki tabloları veritabanı ile eşleştirme
         public DbSet<Kullanici> Kullanici { get; set; }
+        public DbSet<Oyun> Oyun { get; set; }
+        public DbSet<OyunIcerik> OyunIcerik { get; set; }
+        public DbSet<KullaniciOyun> KullaniciOyun { get; set; }
 
 
 
