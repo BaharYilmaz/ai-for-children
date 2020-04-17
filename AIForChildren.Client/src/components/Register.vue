@@ -39,7 +39,7 @@
             <!-- Form -->
             <form class="my-5">
               <div class="form-group">
-                <label class="form-label">İsim</label>
+                <label class="form-label">Kullanıcı Adı</label>
                 <input type="text" class="form-control" v-model="model.kullaniciAdi">
               </div>
               <div class="form-group">
