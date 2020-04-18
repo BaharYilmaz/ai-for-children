@@ -98,10 +98,7 @@
 						</div>
 
 						<div class="card-body text-warning">
-							<img v-if="renk == 'kırmızı'" :src=kırmızı alt="mutlu" class="img-thumbnail">
-							<img v-if="renk == 'mavi'" :src=mavi alt="mutlu" class="img-thumbnail">
-							<img v-if="renk == 'yeşil'" :src=yeşil alt="mutlu" class="img-thumbnail">
-							<img v-if="renk == 'sarı'" :src=sarı alt="mutlu" class="img-thumbnail">
+							<img :src=renk class="img-thumbnail">
 						</div>
 					</div>
 				</div>
@@ -209,20 +206,7 @@
 						</div>
 					</div>
 				</div>
-                <!--<h3 v-if="!tumSonuclar" class="text-center bg-info mt-5 mb-5">İSTERSEN HEPSİNİ TEST EDEBİLİRİZ</h3>
-				<h1 v-if="tumSonuclar" class="text-center bg-success">Sonuçlar</h1>
-				<div class="row justify-content-center">
-					<div class="card border-info mb-3 bg-dark col-md-1 ml-2 mr-2" v-for="(surat, index) in suratlar" :key="index">
-						<div class="card-header bg-transparent border-info text-center text-warning"
-							v-if="tumSonuclar && surat == 'mutsuz'">Üzgün</div>
-						<div class="card-header bg-transparent border-info text-center text-warning"
-							v-if="tumSonuclar && surat == 'mutlu'">Mutlu</div>
-						<div class="card-body text-warning">
-							<img v-if="surat == 'mutlu'" :src=mutlu alt="mutlu" class="img-thumbnail">
-							<img v-if="surat == 'mutsuz'" :src=mutsuz alt="mutsuz" class="img-thumbnail">
-						</div>
-					</div>
-				</div>-->
+               
 				<div v-if="tumSonuclar" class="text-center bg-success mt-3 mb-3">
 					<fireworks></fireworks>
 				</div>
@@ -230,10 +214,7 @@
 					<p>Tekrar oynamak için sayfayı yenileyin!</p>
 					<router-link to="/">Anasayfa</router-link>
 				</div>
-				<!--<div class="text-center mt-3 mb-3">
-					<b-button v-if="!testSonuc" block variant="success" class="text-dark" v-b-modal.modalTest
-						@click="mutluMutsuzTest">Tümünü Test Et</b-button>
-				</div>-->
+				
 			</div>
 		</div>
 
@@ -380,7 +361,7 @@ export default {
 			maviBukalemun: require("@/assets/img/oyunlar/chameleon/mBukalemun.jpg"),
 			yeşilBukalemun: require("@/assets/img/oyunlar/chameleon/yBukalemun.jpg"),
 			sarıBukalemun: require("@/assets/img/oyunlar/chameleon/sBukalemun.jpg"),
-			renkler: ["kırmızı","sarı","yeşil","yeşil","mavi","mavi","yeşil","kırmızı","sarı","mavi","mavi","kırmızı","yeşil","kırmızı","yeşil","mavi","sarı","sarı","kırmızı","sarı"],
+			renkler: [require("@/assets/img/oyunlar/chameleon/1.jpg"),require("@/assets/img/oyunlar/chameleon/2.jpg"),require("@/assets/img/oyunlar/chameleon/3.jpg"),require("@/assets/img/oyunlar/chameleon/4.jpg"),require("@/assets/img/oyunlar/chameleon/5.jpg"),require("@/assets/img/oyunlar/chameleon/6.jpg"),require("@/assets/img/oyunlar/chameleon/7.jpg"),require("@/assets/img/oyunlar/chameleon/8.jpg"),require("@/assets/img/oyunlar/chameleon/9.jpg"),require("@/assets/img/oyunlar/chameleon/10.jpg"),require("@/assets/img/oyunlar/chameleon/11.jpg"),require("@/assets/img/oyunlar/chameleon/12.jpg"),require("@/assets/img/oyunlar/chameleon/13.jpg"),require("@/assets/img/oyunlar/chameleon/14.jpg"),require("@/assets/img/oyunlar/chameleon/15.jpg"),require("@/assets/img/oyunlar/chameleon/16.jpg"),require("@/assets/img/oyunlar/chameleon/17.jpg"),require("@/assets/img/oyunlar/chameleon/18.jpg"),require("@/assets/img/oyunlar/chameleon/19.jpg"),require("@/assets/img/oyunlar/chameleon/20.jpg")],
 			oyun:{"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Scratch'ta rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
 		}
 	},
