@@ -10,7 +10,7 @@
 						<div class="layout-container">
 							<!-- Layout content -->
 							<div class="layout-content">
-								<!-- Content -->
+								<!-- Content --> 
 								<div class="container-fluid flex-grow-1 container-p-y">
 									<div class="row">
 										<!--1 content -->
@@ -160,9 +160,9 @@
 						<h2 class="text-center bg-success" v-if="secim2Secildi">Tahminimiz: Üzgün surat</h2>
 						<fireworks></fireworks>
 						<div class="fixed-bottom mt-5 mb-5">
-              <p>Tekrar oynamak için sayfayı yenileyin!</p>
-              <router-link to="/">Anasayfa</router-link>
-            </div>
+							<p>Tekrar oynamak için sayfayı yenileyin!</p>
+							<router-link to="/">Anasayfa</router-link>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -333,7 +333,7 @@ export default {
             transformasyonu: "",
             egitimBaslangici: "",
             isEgitimBittiMi: false,
-            isFireWorks: false,
+            isFireWorks: false, 
             isTest: false,
             isTestBittiMi: false,
             isMutluMutsuzTest: false,
