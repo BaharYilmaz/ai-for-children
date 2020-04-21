@@ -83,9 +83,9 @@
 
 			<!-- Train -->
 			<div class="container-fluid" v-if="isTrain">
+				<b-button block variant="success"><b>Makineye renkleri öğretelim. Resmilerdeki en yoğun rengi seçelim.</b></b-button>
 				<div class="row justify-content-center">
 					<!-- Mutlu -->
-					
 					<div class="card border-info mb-3 bg-dark col-md-2 ml-2 mr-2 mt-2" v-for="(renk, index) in renkler" :key="index">
 						<div class="form-group btn-sm btn-success mt-2">
 							<select class="form-control btn-success " id="sel1">
@@ -202,11 +202,9 @@
 								@click="secTest">Resim Seç</button>
 							<button v-if="isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSenSecTestEt
 								@click="RenkTest">Test Et</button>
-
 						</div>
 					</div>
 				</div>
-               
 				<div v-if="tumSonuclar" class="text-center bg-success mt-3 mb-3">
 					<fireworks></fireworks>
 				</div>
@@ -290,37 +288,7 @@
 			</template>
 		</div>
 		<!-- ModalsSenSecTestEt -->
-
-		<!-- ModalsTümüTest
-		<div v-if="isRenkTest">
-			<template>
-				<div>
-					<b-modal id="modalTest" size="lg" title="Lütfen test tamamlanmadan çıkmayın!" ok-only @ok="testOk">
-						<div class="text-center" v-if="!isTestBittiMi">
-							<b-spinner variant="primary" label="Spinning"></b-spinner>
-						</div>
-						<div class="text-center mt-4 mb-4">
-							<h4 v-if="veriTestBaslangıc">
-								<b-icon icon="check" /> {{veriTestBaslangıc}}</h4>
-							<h4 v-if="veriTestSon">
-								<b-icon icon="check" /> {{veriTestSon}}</h4>
-						</div>
-						<template v-slot:modal-footer="{ ok }">
-							<b class="text-danger" v-if="!isTestBittiMi">Lütfen test işleminin bitmesini bekleyin!</b>
-							<b-button v-if="isTestBittiMi" size="md" variant="info" @click="ok">
-								Tamam
-							</b-button>
-						</template>
-					</b-modal>
-				</div>
-			</template>
-		</div>-->
-		<!-- ModalsTümüTest -->
-		<!-- Test -->
-
-
 	</div>
-	
 </template>
 
 <script>
