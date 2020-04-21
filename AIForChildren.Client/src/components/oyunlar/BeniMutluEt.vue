@@ -84,6 +84,7 @@
 
 			<!-- Train -->
 			<div class="container-fluid" v-if="isTrain">
+				<b-button class="mt-2 mb-2" block variant="success"><b>Makineye yüzleri öğretelim. Yüz tanımak zor bir işlem o yüzden hepsini eğitmemiz lazım.</b></b-button>
 				<div class="row justify-content-center">
 					<!-- Mutlu -->
 					<div class="card border-info mb-3 bg-dark col-md-1 ml-2 mr-2" v-for="(surat, index) in suratlar" :key="index">

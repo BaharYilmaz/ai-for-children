@@ -83,6 +83,7 @@
             
             <!-- Train -->
             <div class="container-fluid" v-if="isTrain">
+            <b-button class="mt-2 mb-2" block variant="success"><b>Makineye nesneleri öğretelim. Seçtiğiniz resimler mümkün olduğunca birbirinden farklı olsun.</b></b-button>
                 <div class="row justify-content-center">
                     <!-- Mutlu -->
                     
