@@ -12,7 +12,7 @@ export default {
 			"type" : String
 		},
 		prefix: {
-			"default": "ZobooEdu",
+			"default": "AIForChildren",
 			"type" : String
 		},
 		icon: {
