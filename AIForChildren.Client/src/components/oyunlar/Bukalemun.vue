@@ -362,7 +362,7 @@ export default {
 			yeşilBukalemun: require("@/assets/img/oyunlar/chameleon/yBukalemun.jpg"),
 			sarıBukalemun: require("@/assets/img/oyunlar/chameleon/sBukalemun.jpg"),
 			renkler: [require("@/assets/img/oyunlar/chameleon/1.jpg"),require("@/assets/img/oyunlar/chameleon/2.jpg"),require("@/assets/img/oyunlar/chameleon/3.jpg"),require("@/assets/img/oyunlar/chameleon/4.jpg"),require("@/assets/img/oyunlar/chameleon/5.jpg"),require("@/assets/img/oyunlar/chameleon/6.jpg"),require("@/assets/img/oyunlar/chameleon/7.jpg"),require("@/assets/img/oyunlar/chameleon/8.jpg"),require("@/assets/img/oyunlar/chameleon/9.jpg"),require("@/assets/img/oyunlar/chameleon/10.jpg"),require("@/assets/img/oyunlar/chameleon/11.jpg"),require("@/assets/img/oyunlar/chameleon/12.jpg"),require("@/assets/img/oyunlar/chameleon/13.jpg"),require("@/assets/img/oyunlar/chameleon/14.jpg"),require("@/assets/img/oyunlar/chameleon/15.jpg"),require("@/assets/img/oyunlar/chameleon/16.jpg"),require("@/assets/img/oyunlar/chameleon/17.jpg"),require("@/assets/img/oyunlar/chameleon/18.jpg"),require("@/assets/img/oyunlar/chameleon/19.jpg"),require("@/assets/img/oyunlar/chameleon/20.jpg")],
-			oyun:{"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Scratch'ta rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
+			oyun:{"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Renkleri ayırt edebilmek için bilgisayarı eğitin. Daha sonra rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
 		}
 	},
 	methods:{

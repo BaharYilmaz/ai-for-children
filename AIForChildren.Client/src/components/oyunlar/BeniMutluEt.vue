@@ -351,7 +351,7 @@ export default {
             mutlu: require("@/assets/img/oyunlar/make_me_happy/happyFace.jpg"),
             mutsuz: require("@/assets/img/oyunlar/make_me_happy/sadFace.jpg"),
             suratlar: ["mutsuz","mutlu","mutlu","mutsuz","mutlu","mutlu","mutsuz","mutsuz","mutlu","mutsuz","mutsuz","mutlu","mutsuz","mutsuz","mutsuz","mutlu","mutlu","mutsuz","mutlu","mutlu"],
-            oyun: {"id":6,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Scratch'ta hoş şeyler söylersen gülümseyen ve kötü şeyler söylersen ağlayan bir karakter yarat.Bir bilgisayara iltifatları ve hakaretleri tanımasını öğretin."},
+            oyun: {"id":6,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Kimin güldüğünü kimin üzüldüğünü bilgisayara öğretin. Daha sonra sizin seçtiğiniz resimlerden kimin mutlu kimin mutsuz olduğunu tahmin edelim."},
         }
     },
     methods: {
