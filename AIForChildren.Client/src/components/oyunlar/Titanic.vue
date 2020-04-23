@@ -10,7 +10,7 @@
 						<div class="layout-container">
 							<!-- Layout content -->
 							<div class="layout-content">
-								<!-- Content -->
+								<!-- Content --> 
 								<div class="container-fluid flex-grow-1 container-p-y">
 									<div class="row">
 										<!--1 content -->
@@ -46,11 +46,12 @@
 					<!-- Overlay -->
 				</div>
 				<!-- / Layout wrapper -->
+
 			</div>
 		</div>
-		
+
 		<div v-if="isLoading">
-			<page-head icon="play-fill" title="Bukalemun" />
+			<page-head icon="play-fill" title="Titanic"/>
 			<!-- Secenekler -->
 			<div class="container-fluid flex-grow-1 container-p-y" v-if="secenekler">
 				<div class="row">
@@ -83,34 +84,85 @@
 
 			<!-- Train -->
 			<div class="container-fluid" v-if="isTrain">
-				<b-button block variant="success"><b>Makineye renkleri öğretelim. Resmilerdeki en yoğun rengi seçelim.</b></b-button>
-				<div class="row justify-content-center">
-					<!-- Mutlu -->
-					<div class="card border-info mb-3 bg-dark col-md-2 ml-2 mr-2 mt-2" v-for="(renk, index) in renkler" :key="index">
-						<div class="form-group btn-sm btn-success mt-2">
-							<select class="form-control btn-success " id="sel1">
-								<option>Seçiniz</option>
-								<option>Kırmızı</option>
-								<option>Sarı</option>
-								<option>Yeşil</option>
-								<option>Mavi</option>
-							</select>
-						</div>
-
-						<div class="card-body text-warning">
-							<img :src=renk class="img-thumbnail">
-						</div>
+				<b-button class="mt-2 mb-2" block variant="warning"><b>İpucu!! Titanic battığında 1. kattaki herkes ölmüştü. Orta kattaki insanlardan sadece kadınlar kurtuldu.Çünkü kadın ve çocuklara öncelik tanınmıştı. En üst kattan iser herkes başarıyla kurtulmuştu.Bu bilgiler doğrultusunda makinemize insanların bulunduğu kat ve cinsiyetine göre yaşayıp yaşamadığını öğretelim.</b></b-button>
+				<b-button class="mt-2 mb-2" block variant="info"><b>İpucu!! Kırmızı butonlar ölü insanları temsil etmektedir. Yeşiller ise  kurtulanları. Sürükle bırak sayeseinde gerekli katlara yerleştirelim. </b></b-button>
+				<b-button class="mt-2 mb-2" block variant="danger"><b>İpucu!! Unutmayın her katta 2 kadın ve 2 erkek bulunmaktadır. Eksik olmasın. :)</b></b-button>
+				<main class="flexbox" v-bind:style="{ 'width': '100%'}">
+                    <Board id="board-1">
+                        <Card id="card-1" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+                            <p>KADIN</p>
+                        </Card>
+                        <Card id="card-2" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+                    		<p>ERKEK</p>
+                        </Card>
+						<Card id="card-3" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+                            <p>KADIN</p>
+                        </Card>
+                        <Card id="card-4" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+                            <p>ERKEK</p>
+                        </Card>
+						<Card id="card-8" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+                            <p>KADIN</p>
+                        </Card>
+						<Card id="card-9" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+                            <p>ERKEK</p>
+                        </Card>
+                        <Card id="card-10" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+                            <p>ERKEK</p>
+                        </Card>
+                        <Card id="card-11" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+                            <p>KADIN</p>
+                        </Card>
+                    </Board>
+				</main>
+				<main class="flexbox"> <!-- v-bind:style="{ 'background-image': `url(` + oyun.image2 + `)` }">-->
+					<div class="col-3">
+						<b-button class="mt-2 mb-2" block variant="warning"><b>KAT 1</b></b-button>
 					</div>
-				</div>
+					<div class="col-9">
+						<Board id="board-2">
+							<Card id="card-5" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+                            	<p>ERKEK</p>
+                        	</Card>
+						</Board>
+					</div>
+				</main>
+				<main class="flexbox">
+					<div class="col-3">
+						<b-button class="mt-2 mb-2" block variant="warning"><b>KAT 2</b></b-button>
+					</div>
+					<div class="col-9">
+						<Board id="board-3">
+							<Card id="card-6" draggable="true" v-bind:style="{ 'background-color': 'red'}">
+								<p>ERKEK</p>
+							</Card>
+							<Card id="card-7" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+								<p>KADIN</p>
+							</Card>
+						</Board>
+					</div>
+				</main>
+				<main class="flexbox">
+					<div class="col-3">
+						<b-button class="mt-2 mb-2" block variant="warning"><b>KAT 3</b></b-button>
+					</div>
+					<div class="col-9">
+						<Board id="board-4">
+							<Card id="card-12" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+                           		<p>KADIN</p>
+                        	</Card>
+						</Board>
+					</div>	
+                </main>
 
 				<div class="text-center">
-					<b-button block variant="success" class="text-dark" v-b-modal.modalEgit @click="RenkTrain">Tümünü Eğit</b-button>
+					<b-button block variant="success" class="text-dark" v-b-modal.modalEgit @click="titanicTrain">Eğit</b-button>
 				</div>
 
 			</div>
-				
+
 			<!-- ModalsTrain -->
-			<div v-if="isRenkTrain">
+			<div v-if="isTitanicTrain">
 				<template>
 					<div>
 						<b-modal id="modalEgit" size="lg" title="Lütfen eğitim tamamlanmadan çıkmayın!" ok-only @ok="trainOk">
@@ -143,27 +195,29 @@
 					</div>
 				</template>
 			</div>
-			<!-- /ModalsTrain -->
-			<!-- /Train -->
+        
+			<!-- ModalsTrain -->
+			<!-- Train -->
 			<!-- Test -->
 			<div>
 				<!-- TestSonuc -->
+                
 				<div v-if="tekSonuc">
 					<h1 class="text-center mt-4 mb-4 bg-success">{{testSonuc}}</h1>
 					<div v-if="tekSonuc" class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=kırmızıBukalemun alt="kırmızı" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=sarıBukalemun alt="sarı" class="img-thumbnail">
-							<img v-if="secim3Secildi" :src=yeşilBukalemun alt="yeşil" class="img-thumbnail">
-							<img v-if="secim4Secildi" :src=maviBukalemun alt="mavi" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=oyun.test1 alt="test1" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=oyun.test2 alt="test1" class="img-thumbnail">
+							<img v-if="secim3Secildi" :src=oyun.test3 alt="test1" class="img-thumbnail">
+							<img v-if="secim4Secildi" :src=oyun.test4 alt="test1" class="img-thumbnail">
 						</div>
 					</div>
 					<div class="text-center" v-if="tekSonuc">
-						<h2 class="text-center bg-success" v-if="secim1Secildi">Kırmızı Bukalemun</h2>
-						<h2 class="text-center bg-success" v-if="secim2Secildi">Sarı Bukalemun</h2>
-						<h2 class="text-center bg-success" v-if="secim3Secildi">Yeşil Bukalemun</h2>
-						<h2 class="text-center bg-success" v-if="secim4Secildi">Mavi Bukalemun</h2>
+						<h2 class="text-center bg-success" v-if="secim1Secildi">ÖLEN KADIN</h2>
+						<h2 class="text-center bg-success" v-if="secim2Secildi">ÖLEN ERKEK</h2>
+						<h2 class="text-center bg-success" v-if="secim3Secildi">YAŞAYAN ERKEK</h2>
+						<h2 class="text-center bg-success" v-if="secim4Secildi">YAŞAYAN KADIN</h2>
 						<fireworks></fireworks>
 						<div class="fixed-bottom mt-5 mb-5">
 							<p>Tekrar oynamak için sayfayı yenileyin!</p>
@@ -173,11 +227,12 @@
 				</div>
 			</div>
 			<!-- TestSonuc -->
+
 			<div class="container-fluid" v-if="isTest">
 				<div class="mt-5 mb-5">
-					<h3 v-if="!tumSonuclar" class="text-center bg-info">SEÇTİĞİN RESMİ TEST EDEBİLİRİZ VE BUKALEMUN RENGİNİ OLUŞTURALIM</h3>
+					<h3 v-if="!tumSonuclar" class="text-center bg-info">İSTERSEN SENİN SEÇTİĞİN RESMİ TEST EDEBİLİRİZ</h3>
 				</div>
-				<div v-if="!isSecildiMi && !tumSonuclar" class="text-center">
+				<div v-if="!isSecildiMi" class="text-center">
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçimini Yap!</div>
 						<div class="card-body text-warning">
@@ -192,50 +247,47 @@
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=kırmızı alt="kırmızı" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=sarı alt="sarı" class="img-thumbnail">
-							<img v-if="secim3Secildi" :src=yeşil alt="yeşil" class="img-thumbnail">
-							<img v-if="secim4Secildi" :src=mavi alt="mavi" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=oyun.test1 alt="test1" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=oyun.test2 alt="test1" class="img-thumbnail">
+							<img v-if="secim3Secildi" :src=oyun.test3 alt="test1" class="img-thumbnail">
+							<img v-if="secim4Secildi" :src=oyun.test4 alt="test1" class="img-thumbnail">
 						</div>
 						<div class="card-footer bg-transparent border-info text-center">
-							<button v-if="!isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSec
-								@click="secTest">Resim Seç</button>
-							<button v-if="isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSenSecTestEt
-								@click="RenkTest">Test Et</button>
+							<button v-if="!isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSec @click="secTest">Resim Seç</button>
+							<button v-if="isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSenSecTestEt @click="titanicTest">Test Et</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-	<!-- ModalsSenSec -->
+		<!-- ModalsSenSec -->
 		<div v-if="onSec">
 			<template>
 				<div>
 					<b-modal id="modalSec" size="lg" title="Lütfen bir resim seçin!" ok-only>
 						<div class="row justify-content-center">
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=kırmızı alt="kırmızı" class="img-thumbnail">
+								<img :src=oyun.test1 class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
-									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim1">Seç</button>
+									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim1">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=sarı alt="sarı" class="img-thumbnail">
+								<img :src=oyun.test2 class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
-									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim2">Seç</button>
+									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim2">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=yeşil alt="yeşil" class="img-thumbnail">
+								<img :src=oyun.test3 class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
-									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim3">Seç</button>
+									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim3">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=mavi alt="mavi" class="img-thumbnail">
+								<img :src=oyun.test4 class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
-									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim4">Seç</button>
+									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim4">Seç</button>
 								</div>
 							</div>
 						</div>
@@ -255,7 +307,7 @@
 		<!-- ModalsSenSec -->
 
 		<!-- ModalsSenSecTestEt -->
-		<div v-if="isRenkTest">
+		<div v-if="isTitanicTest">
 			<template>
 				<div>
 					<b-modal id="modalSenSecTestEt" size="lg" title="Lütfen test tamamlanmadan çıkmayın!" ok-only
@@ -280,28 +332,34 @@
 			</template>
 		</div>
 		<!-- ModalsSenSecTestEt -->
-	</div>
+		<!-- Test -->
+	</div>  
 </template>
 
 <script>
+import Board from "./titanic/Board"
+import Card from "./titanic/Card"
 export default {
-    
-	data(){
-		return{
-			name:"Bukalemun",
-			isLoading: false,
+    name:"Titanic",
+    components:{
+        Board,
+        Card
+    },
+    data(){
+        return{
+            isLoading: false,
             secenekler: true,
             isTrain: false,
-            isRenkTrain: false,
+            isTitanicTrain: false,
             egitimSonu: "",
             veriOnIsleme: "",
             transformasyonu: "",
             egitimBaslangici: "",
-			isEgitimBittiMi: false,
+            isEgitimBittiMi: false,
             isFireWorks: false, 
             isTest: false,
             isTestBittiMi: false,
-            isRenkTest: false,
+            isTitanicTest: false,
             veriTestBaslangıc: "",
             veriTestSon: "",
             testSonuc: "",
@@ -309,37 +367,28 @@ export default {
             onSec: false,
             secim1Secildi: false,
 			secim2Secildi: false,
-			secim3Secildi: false,
-            secim4Secildi: false,
-            tumSonuclar: false,
-            tekSonuc: false,
-			kırmızı: require("@/assets/img/oyunlar/chameleon/1.jpg"),
-			mavi: require("@/assets/img/oyunlar/chameleon/11.jpg"),
-			yeşil: require("@/assets/img/oyunlar/chameleon/7.jpg"),
-			sarı: require("@/assets/img/oyunlar/chameleon/2.jpg"),
-			kırmızıBukalemun: require("@/assets/img/oyunlar/chameleon/kBukalemun.png"),
-			maviBukalemun: require("@/assets/img/oyunlar/chameleon/mBukalemun.jpg"),
-			yeşilBukalemun: require("@/assets/img/oyunlar/chameleon/yBukalemun.jpg"),
-			sarıBukalemun: require("@/assets/img/oyunlar/chameleon/sBukalemun.jpg"),
-			renkler: [require("@/assets/img/oyunlar/chameleon/1.jpg"),require("@/assets/img/oyunlar/chameleon/2.jpg"),require("@/assets/img/oyunlar/chameleon/3.jpg"),require("@/assets/img/oyunlar/chameleon/4.jpg"),require("@/assets/img/oyunlar/chameleon/5.jpg"),require("@/assets/img/oyunlar/chameleon/6.jpg"),require("@/assets/img/oyunlar/chameleon/7.jpg"),require("@/assets/img/oyunlar/chameleon/8.jpg"),require("@/assets/img/oyunlar/chameleon/9.jpg"),require("@/assets/img/oyunlar/chameleon/10.jpg"),require("@/assets/img/oyunlar/chameleon/11.jpg"),require("@/assets/img/oyunlar/chameleon/12.jpg"),require("@/assets/img/oyunlar/chameleon/13.jpg"),require("@/assets/img/oyunlar/chameleon/14.jpg"),require("@/assets/img/oyunlar/chameleon/15.jpg"),require("@/assets/img/oyunlar/chameleon/16.jpg"),require("@/assets/img/oyunlar/chameleon/17.jpg"),require("@/assets/img/oyunlar/chameleon/18.jpg"),require("@/assets/img/oyunlar/chameleon/19.jpg"),require("@/assets/img/oyunlar/chameleon/20.jpg")],
-			oyun:{"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Renkleri ayırt edebilmek için bilgisayarı eğitin. Daha sonra rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
-		}
-	},
-	methods:{
-		basla(){
-			this.isLoading=true;
-		},
-		train(){
+			secim4Secildi: false,
+            secim3Secildi: false,
+            //tumSonuclar: false,
+			tekSonuc: false,
+			oyun: {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"test1": require('@/assets/img/oyunlar/titanic/1.png'),"test2": require('@/assets/img/oyunlar/titanic/2.png'),"test3": require('@/assets/img/oyunlar/titanic/3.png'),"test4": require('@/assets/img/oyunlar/titanic/4.png'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir Python programı oluşturun.Bir bilgisayara sonuçları tahmin etmesini öğretin."},
+        }
+    },
+    methods: {
+        basla(){
+            this.isLoading = true;
+        },
+        train(){
             this.secenekler = false;
             this.isTrain = true;
-		},
-		RenkTrain(){
+        },
+        titanicTrain(){
             this.veriOnIsleme = "";
             this.transformasyonu = "";
             this.egitimBaslangici = "";
             this.egitimSonu = "";
             this.isEgitimBittiMi = false;
-            this.isRenkTrain = true;
+            this.isTitanicTrain = true;
 
             setTimeout(() => { 
                 this.veriOnIsleme = "Verinin Ön İşlemesi.";
@@ -354,27 +403,29 @@ export default {
                 this.egitimSonu = "Eğitim başarılı bir şekilde tamamlandı. Tebrikler!"
                 this.isEgitimBittiMi = true
              }, 15600);
-		},
-		trainOk(){
+        },
+        trainOk(){
             this.isLoading = true
             this.isTrain = false
-            this.isRenkTrain = false;
+            this.isTitanicTrain = false;
             this.secenekler = true;
         },
-		test(){
+        test(){
             this.secenekler = false;
             this.isTest = true;
             this.testSonuc = "";
             this.isTestBittiMi = false;
             this.secim1Secildi = false;
-            this.secim2Secildi = false;
+			this.secim2Secildi = false;
+			this.secim3Secildi = false;
+            this.secim4Secildi = false;
             this.isSecildiMi = false;
             this.onSec = false;
         },
-        RenkTest(){
+        titanicTest(){
             this.veriTestBaslangıc = "";
             this.veriTestSon = "";
-            this.isRenkTest = true;
+            this.isTitanicTest = true;
             setTimeout(() => { 
                 this.veriTestBaslangıc = "Test işlemi başladı.";
              }, 2000);
@@ -386,10 +437,10 @@ export default {
         testOk(){
             this.isLoading = true
             this.isTrain = false
-            this.isRenkTrain = false;
+            this.isTitanicTrain = false;
             this.secenekler = false;
             this.testSonuc = "Test Sonuçları";
-            this.tumSonuclar = true;
+            //this.tumSonuclar = true;
         },
         secTest(){
             this.onSec = true;
@@ -405,20 +456,57 @@ export default {
 		secim3(){
             this.isSecildiMi = true;
             this.secim3Secildi = true;
-        },
-        secim4(){
+		},
+		secim4(){
             this.isSecildiMi = true;
             this.secim4Secildi = true;
-		},
+        },
         modalSenSecTestEt(){
             this.isLoading = true
             this.isTrain = false
-            this.isRenkTrain = false;
+            this.isTitanicTrain = false;
             this.secenekler = false;
             this.isTest = false;
             this.testSonuc = "Test Sonucu";
             this.tekSonuc = true;
         }
-	}
+    }
 }
 </script>
+
+<style scoped>
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f3f3;
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;   
+    width: 100%;
+    max-width: 1000px;
+    /*height: 100vh;*/
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 15px;
+}
+.flexbox .board{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #313131;
+    /*padding: 15px;*/
+    margin: 10px;
+}
+.flexbox .board .card{
+    padding: flex;
+    background-color: #f3f3f3;
+    cursor: pointer;
+	margin:10px;
+	padding:5px;
+}
+</style>

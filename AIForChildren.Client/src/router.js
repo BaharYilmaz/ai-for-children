@@ -14,6 +14,7 @@ import KiviVeyaGelincik from "./components/oyunlar/KiviGelincik.vue"
 import BeniMutluEt from "./components/oyunlar/BeniMutluEt.vue"
 import OkulKutuphane from "./components/oyunlar/OkulKütüphane.vue"
 import SapkaSıralama from "./components/oyunlar/SapkaSıralama.vue"
+import Titanic from "./components/oyunlar/Titanic.vue"
 import AkıllıSınıf from "./components/oyunlar/AkıllıSınıf.vue"
 
 
@@ -28,6 +29,7 @@ export const router =new VueRouter({
       {path: "/arabaveyakupa", component: ArabaKupa },
       {path: "/bukalemun", component: Bukalemun },
       {path: "/bulonu", component: BulOnu },
+      {path: "/titanic", component: Titanic },
       {path: "/kiviveyagelincik", component: KiviVeyaGelincik},
       {path: "/benimutluet", component: BeniMutluEt },
       {path: "/okulkütüphane", component: OkulKutuphane},
