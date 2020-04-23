@@ -115,7 +115,7 @@
                         </Card>
                     </Board>
 				</main>
-				<main class="flexbox"> <!-- v-bind:style="{ 'background-image': `url(` + oyun.image2 + `)` }">-->
+				<main class="flexbox">
 					<div class="col-3">
 						<b-button class="mt-2 mb-2" block variant="warning"><b>KAT 1</b></b-button>
 					</div>
@@ -160,7 +160,6 @@
 				</div>
 
 			</div>
-
 			<!-- ModalsTrain -->
 			<div v-if="isTitanicTrain">
 				<template>
@@ -195,13 +194,11 @@
 					</div>
 				</template>
 			</div>
-        
 			<!-- ModalsTrain -->
 			<!-- Train -->
 			<!-- Test -->
 			<div>
 				<!-- TestSonuc -->
-                
 				<div v-if="tekSonuc">
 					<h1 class="text-center mt-4 mb-4 bg-success">{{testSonuc}}</h1>
 					<div v-if="tekSonuc" class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
@@ -337,8 +334,8 @@
 </template>
 
 <script>
-import Board from "./titanic/Board"
-import Card from "./titanic/Card"
+import Board from "./DragDrop/Board"
+import Card from "./DragDrop/Card"
 export default {
     name:"Titanic",
     components:{
@@ -364,12 +361,11 @@ export default {
             veriTestSon: "",
             testSonuc: "",
             isSecildiMi: false,
-            onSec: false,
+			onSec: false,
             secim1Secildi: false,
 			secim2Secildi: false,
 			secim4Secildi: false,
             secim3Secildi: false,
-            //tumSonuclar: false,
 			tekSonuc: false,
 			oyun: {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"test1": require('@/assets/img/oyunlar/titanic/1.png'),"test2": require('@/assets/img/oyunlar/titanic/2.png'),"test3": require('@/assets/img/oyunlar/titanic/3.png'),"test4": require('@/assets/img/oyunlar/titanic/4.png'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir Python programı oluşturun.Bir bilgisayara sonuçları tahmin etmesini öğretin."},
         }
@@ -403,12 +399,12 @@ export default {
                 this.egitimSonu = "Eğitim başarılı bir şekilde tamamlandı. Tebrikler!"
                 this.isEgitimBittiMi = true
              }, 15600);
-        },
+		},
         trainOk(){
             this.isLoading = true
             this.isTrain = false
             this.isTitanicTrain = false;
-            this.secenekler = true;
+			this.secenekler = true;
         },
         test(){
             this.secenekler = false;
@@ -440,7 +436,6 @@ export default {
             this.isTitanicTrain = false;
             this.secenekler = false;
             this.testSonuc = "Test Sonuçları";
-            //this.tumSonuclar = true;
         },
         secTest(){
             this.onSec = true;
@@ -488,7 +483,6 @@ body {
     justify-content: space-between;   
     width: 100%;
     max-width: 1000px;
-    /*height: 100vh;*/
     overflow: hidden;
     margin: 0 auto;
     padding: 15px;
@@ -499,7 +493,6 @@ body {
     width: 100%;
     max-width: 1000px;
     background-color: #313131;
-    /*padding: 15px;*/
     margin: 10px;
 }
 .flexbox .board .card{

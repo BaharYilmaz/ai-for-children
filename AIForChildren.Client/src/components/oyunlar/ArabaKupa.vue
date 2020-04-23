@@ -105,9 +105,7 @@
                 <div class="text-center">
                     <b-button block variant="success" class="text-dark" v-b-modal.modalEgit @click="RenkTrain">Tümünü Eğit</b-button>
                 </div>
-            
             </div>
-            
             <!-- ModalsTrain -->
             <div v-if="isRenkTrain">
                 <template>
@@ -152,10 +150,10 @@
                     <div v-if="tekSonuc" class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
                         <div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
                         <div class="card-body text-warning">
-                            <img v-if="secim1Secildi" :src=testCup alt="testCup" class="img-thumbnail">
-                            <img v-if="secim2Secildi" :src=testCar2 alt="testCar2" class="img-thumbnail">
-                            <img v-if="secim3Secildi" :src=testCar alt="testCar" class="img-thumbnail">
-                            <img v-if="secim4Secildi" :src=testCup2 alt="testCup2" class="img-thumbnail">
+                            <img v-if="secim1Secildi" :src=resimler.testCup alt="testCup" class="img-thumbnail">
+                            <img v-if="secim2Secildi" :src=resimler.testCar2 alt="testCar2" class="img-thumbnail">
+                            <img v-if="secim3Secildi" :src=resimler.testCar alt="testCar" class="img-thumbnail">
+                            <img v-if="secim4Secildi" :src=resimler.testCup2 alt="testCup2" class="img-thumbnail">
                         </div>
                     </div>
                     <div class="text-center" v-if="tekSonuc">
@@ -191,10 +189,10 @@
                     <div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
                         <div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
                         <div class="card-body text-warning">
-                            <img v-if="secim1Secildi" :src=kupa1 alt="kupa" class="img-thumbnail">
-                            <img v-if="secim2Secildi" :src=car1 alt="araba" class="img-thumbnail">
-                            <img v-if="secim3Secildi" :src=car2 alt="araba" class="img-thumbnail">
-                            <img v-if="secim4Secildi" :src=kupa2 alt="kupa" class="img-thumbnail">
+                            <img v-if="secim1Secildi" :src=resimler.kupa1 alt="kupa" class="img-thumbnail">
+                            <img v-if="secim2Secildi" :src=resimler.car1 alt="araba" class="img-thumbnail">
+                            <img v-if="secim3Secildi" :src=resimler.car2 alt="araba" class="img-thumbnail">
+                            <img v-if="secim4Secildi" :src=resimler.kupa2 alt="kupa" class="img-thumbnail">
                         </div>
                         <div class="card-footer bg-transparent border-info text-center">
                             <button v-if="!isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSec
@@ -205,18 +203,16 @@
                         </div>
                     </div>
                 </div>
-                
+                <!--
                 <div v-if="tumSonuclar" class="text-center bg-success mt-3 mb-3">
                     <fireworks></fireworks>
-                </div>
+                </div>-->
                 <div v-if="tumSonuclar" class="text-center mt-5 mb-5 fixed-bottom">
                     <p>Tekrar oynamak için sayfayı yenileyin!</p>
                     <router-link to="/">Anasayfa</router-link>
                 </div>
-            
             </div>
         </div>
-        
         <!-- ModalsSenSec -->
         <div v-if="onSec">
             <template>
@@ -224,25 +220,25 @@
                     <b-modal id="modalSec" size="lg" title="Lütfen bir resim seçin!" ok-only>
                         <div class="row justify-content-center">
                             <div class="col-md-3 ml-5 mr-5">
-                                <img :src=kupa1 alt="kırmızı" class="img-thumbnail">
+                                <img :src=resimler.kupa1 alt="kırmızı" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
                                     <button v-if="!isSecildiMi" class="btn btn-success" @click="secim1">Seç</button>
                                 </div>
                             </div>
                             <div class="col-md-3 ml-5 mr-5">
-                                <img :src=car1 alt="sarı" class="img-thumbnail">
+                                <img :src=resimler.car1 alt="sarı" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
                                     <button v-if="!isSecildiMi" class="btn btn-success" @click="secim2">Seç</button>
                                 </div>
                             </div>
                             <div class="col-md-3 ml-5 mr-5">
-                                <img :src=car2 alt="yeşil" class="img-thumbnail">
+                                <img :src=resimler.car2 alt="yeşil" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
                                     <button v-if="!isSecildiMi" class="btn btn-success" @click="secim3">Seç</button>
                                 </div>
                             </div>
                             <div class="col-md-3 ml-5 mr-5">
-                                <img :src=kupa2 alt="mavi" class="img-thumbnail">
+                                <img :src=resimler.kupa2 alt="mavi" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
                                     <button v-if="!isSecildiMi" class="btn btn-success" @click="secim4">Seç</button>
                                 </div>
@@ -289,7 +285,6 @@
             </template>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -322,17 +317,9 @@
                 secim4Secildi: false,
                 tumSonuclar: false,
                 tekSonuc: false,
-                car1:  require("@/assets/img/oyunlar/carorcup/Car/car5.jpg"),
-                car2:  require("@/assets/img/oyunlar/carorcup/Car/car7.jpg"),
-                kupa1: require("@/assets/img/oyunlar/carorcup/Cup/cup3.jpg"),
-                kupa2: require("@/assets/img/oyunlar/carorcup/Cup/cup6.jpg"),
-                testCup:  require("@/assets/img/oyunlar/carorcup/cupAll1.jpg"),
-                testCup2: require("@/assets/img/oyunlar/carorcup/cupAll2.jpg"),
-                testCar:  require("@/assets/img/oyunlar/carorcup/carAll1.jpg"),
-                testCar2: require("@/assets/img/oyunlar/carorcup/carAll2.jpg"),
                 carOrCup: [require("@/assets/img/oyunlar/carorcup/1.jpg"),require("@/assets/img/oyunlar/carorcup/17.jpg"),require("@/assets/img/oyunlar/carorcup/3.jpg"),require("@/assets/img/oyunlar/carorcup/11.jpg"),require("@/assets/img/oyunlar/carorcup/6.jpg"),require("@/assets/img/oyunlar/carorcup/7.jpg"),require("@/assets/img/oyunlar/carorcup/20.jpg"),require("@/assets/img/oyunlar/carorcup/8.jpg"),require("@/assets/img/oyunlar/carorcup/19.jpg"),require("@/assets/img/oyunlar/carorcup/2.jpg"),require("@/assets/img/oyunlar/carorcup/9.jpg"),require("@/assets/img/oyunlar/carorcup/10.jpg"),require("@/assets/img/oyunlar/carorcup/12.jpg"),require("@/assets/img/oyunlar/carorcup/13.jpg"),require("@/assets/img/oyunlar/carorcup/14.jpg"),require("@/assets/img/oyunlar/carorcup/4.jpg"),require("@/assets/img/oyunlar/carorcup/15.jpg"),require("@/assets/img/oyunlar/carorcup/5.jpg"),require("@/assets/img/oyunlar/carorcup/16.jpg"),require("@/assets/img/oyunlar/carorcup/18.jpg")],
                 oyun: {"id":1,"image": require('@/assets/img/oyunlar/araba.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/arabaveyakupa","isim": "Araba veya Kupa","icerik": "Fotoğrafları gruplara ayırabilmek için bilgisayarı eğitin. Daha sonra Nesneleri nasıl tanıdığımızı görmek için test edin."},
-    
+                resimler:{"car1":require("@/assets/img/oyunlar/carorcup/Car/car5.jpg"),"car2":require("@/assets/img/oyunlar/carorcup/Car/car7.jpg"),"kupa1":require("@/assets/img/oyunlar/carorcup/Cup/cup3.jpg"),"kupa2":require("@/assets/img/oyunlar/carorcup/Cup/cup6.jpg"),"testCup":require("@/assets/img/oyunlar/carorcup/cupAll1.jpg"),"testCup2":require("@/assets/img/oyunlar/carorcup/cupAll2.jpg"),"testCar":require("@/assets/img/oyunlar/carorcup/carAll1.jpg"),"testCar2":require("@/assets/img/oyunlar/carorcup/carAll2.jpg")},
             }
         },
         methods:{

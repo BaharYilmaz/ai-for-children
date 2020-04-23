@@ -93,8 +93,8 @@
 						<div class="card-header bg-transparent border-info text-center text-warning" v-if="surat == 'mutlu'">Mutlu
 						</div>
 						<div class="card-body text-warning">
-							<img v-if="surat == 'mutlu'" :src=mutlu alt="mutlu" class="img-thumbnail">
-							<img v-if="surat == 'mutsuz'" :src=mutsuz alt="mutlu" class="img-thumbnail">
+							<img v-if="surat == 'mutlu'" :src=resimler.mutlu alt="mutlu" class="img-thumbnail">
+							<img v-if="surat == 'mutsuz'" :src=resimler.mutsuz alt="mutlu" class="img-thumbnail">
 
 						</div>
 					</div>
@@ -152,8 +152,8 @@
 					<div v-if="tekSonuc" class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=testMutlu alt="mutlu" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=testMutsuz alt="mutsuz" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=resimler.testMutlu alt="mutlu" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=resimler.testMutsuz alt="mutsuz" class="img-thumbnail">
 						</div>
 					</div>
 					<div class="text-center" v-if="tekSonuc">
@@ -188,8 +188,8 @@
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=testMutlu alt="mutlu" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=testMutsuz alt="mutlu" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=resimler.testMutlu alt="mutlu" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=resimler.testMutsuz alt="mutlu" class="img-thumbnail">
 						</div>
 						<div class="card-footer bg-transparent border-info text-center">
 							<button v-if="!isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSec
@@ -209,8 +209,8 @@
 						<div class="card-header bg-transparent border-info text-center text-warning"
 							v-if="tumSonuclar && surat == 'mutlu'">Mutlu</div>
 						<div class="card-body text-warning">
-							<img v-if="surat == 'mutlu'" :src=mutlu alt="mutlu" class="img-thumbnail">
-							<img v-if="surat == 'mutsuz'" :src=mutsuz alt="mutsuz" class="img-thumbnail">
+							<img v-if="surat == 'mutlu'" :src=resimler.mutlu alt="mutlu" class="img-thumbnail">
+							<img v-if="surat == 'mutsuz'" :src=resimler.mutsuz alt="mutsuz" class="img-thumbnail">
 						</div>
 					</div>
 				</div>
@@ -347,12 +347,9 @@ export default {
             secim2Secildi: false,
             tumSonuclar: false,
             tekSonuc: false,
-            testMutlu: require("@/assets/img/oyunlar/make_me_happy/smile.png"),
-            testMutsuz: require("@/assets/img/oyunlar/make_me_happy/sad.png"),
-            mutlu: require("@/assets/img/oyunlar/make_me_happy/happyFace.jpg"),
-            mutsuz: require("@/assets/img/oyunlar/make_me_happy/sadFace.jpg"),
             suratlar: ["mutsuz","mutlu","mutlu","mutsuz","mutlu","mutlu","mutsuz","mutsuz","mutlu","mutsuz","mutsuz","mutlu","mutsuz","mutsuz","mutsuz","mutlu","mutlu","mutsuz","mutlu","mutlu"],
-            oyun: {"id":6,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Kimin güldüğünü kimin üzüldüğünü bilgisayara öğretin. Daha sonra sizin seçtiğiniz resimlerden kimin mutlu kimin mutsuz olduğunu tahmin edelim."},
+			oyun: {"id":6,"image": require('@/assets/img/oyunlar/mutlu.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/benimutluet","isim": "Beni mutlu et!","icerik": "Kimin güldüğünü kimin üzüldüğünü bilgisayara öğretin. Daha sonra sizin seçtiğiniz resimlerden kimin mutlu kimin mutsuz olduğunu tahmin edelim."},
+			resimler:{"testMutlu": require("@/assets/img/oyunlar/make_me_happy/smile.png"),"testMutsuz": require("@/assets/img/oyunlar/make_me_happy/sad.png"),"mutlu": require("@/assets/img/oyunlar/make_me_happy/happyFace.jpg"),"mutsuz": require("@/assets/img/oyunlar/make_me_happy/sadFace.jpg"),},
         }
     },
     methods: {

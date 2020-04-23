@@ -153,10 +153,10 @@
 					<div v-if="tekSonuc" class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=kırmızıBukalemun alt="kırmızı" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=sarıBukalemun alt="sarı" class="img-thumbnail">
-							<img v-if="secim3Secildi" :src=yeşilBukalemun alt="yeşil" class="img-thumbnail">
-							<img v-if="secim4Secildi" :src=maviBukalemun alt="mavi" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=resimler.kırmızıBukalemun alt="kırmızı" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=resimler.sarıBukalemun alt="sarı" class="img-thumbnail">
+							<img v-if="secim3Secildi" :src=resimler.yeşilBukalemun alt="yeşil" class="img-thumbnail">
+							<img v-if="secim4Secildi" :src=resimler.maviBukalemun alt="mavi" class="img-thumbnail">
 						</div>
 					</div>
 					<div class="text-center" v-if="tekSonuc">
@@ -192,10 +192,10 @@
 					<div class="card border-info mb-3 bg-dark col-md-4 mx-auto" style="max-width: 18rem;">
 						<div class="card-header bg-transparent border-info text-center text-warning">Seçiminiz</div>
 						<div class="card-body text-warning">
-							<img v-if="secim1Secildi" :src=kırmızı alt="kırmızı" class="img-thumbnail">
-							<img v-if="secim2Secildi" :src=sarı alt="sarı" class="img-thumbnail">
-							<img v-if="secim3Secildi" :src=yeşil alt="yeşil" class="img-thumbnail">
-							<img v-if="secim4Secildi" :src=mavi alt="mavi" class="img-thumbnail">
+							<img v-if="secim1Secildi" :src=resimler.kırmızı alt="kırmızı" class="img-thumbnail">
+							<img v-if="secim2Secildi" :src=resimler.sarı alt="sarı" class="img-thumbnail">
+							<img v-if="secim3Secildi" :src=resimler.yeşil alt="yeşil" class="img-thumbnail">
+							<img v-if="secim4Secildi" :src=resimler.mavi alt="mavi" class="img-thumbnail">
 						</div>
 						<div class="card-footer bg-transparent border-info text-center">
 							<button v-if="!isSecildiMi" class="btn btn-outline-info text-warning" v-b-modal.modalSec
@@ -313,16 +313,9 @@ export default {
             secim4Secildi: false,
             tumSonuclar: false,
             tekSonuc: false,
-			kırmızı: require("@/assets/img/oyunlar/chameleon/1.jpg"),
-			mavi: require("@/assets/img/oyunlar/chameleon/11.jpg"),
-			yeşil: require("@/assets/img/oyunlar/chameleon/7.jpg"),
-			sarı: require("@/assets/img/oyunlar/chameleon/2.jpg"),
-			kırmızıBukalemun: require("@/assets/img/oyunlar/chameleon/kBukalemun.png"),
-			maviBukalemun: require("@/assets/img/oyunlar/chameleon/mBukalemun.jpg"),
-			yeşilBukalemun: require("@/assets/img/oyunlar/chameleon/yBukalemun.jpg"),
-			sarıBukalemun: require("@/assets/img/oyunlar/chameleon/sBukalemun.jpg"),
 			renkler: [require("@/assets/img/oyunlar/chameleon/1.jpg"),require("@/assets/img/oyunlar/chameleon/2.jpg"),require("@/assets/img/oyunlar/chameleon/3.jpg"),require("@/assets/img/oyunlar/chameleon/4.jpg"),require("@/assets/img/oyunlar/chameleon/5.jpg"),require("@/assets/img/oyunlar/chameleon/6.jpg"),require("@/assets/img/oyunlar/chameleon/7.jpg"),require("@/assets/img/oyunlar/chameleon/8.jpg"),require("@/assets/img/oyunlar/chameleon/9.jpg"),require("@/assets/img/oyunlar/chameleon/10.jpg"),require("@/assets/img/oyunlar/chameleon/11.jpg"),require("@/assets/img/oyunlar/chameleon/12.jpg"),require("@/assets/img/oyunlar/chameleon/13.jpg"),require("@/assets/img/oyunlar/chameleon/14.jpg"),require("@/assets/img/oyunlar/chameleon/15.jpg"),require("@/assets/img/oyunlar/chameleon/16.jpg"),require("@/assets/img/oyunlar/chameleon/17.jpg"),require("@/assets/img/oyunlar/chameleon/18.jpg"),require("@/assets/img/oyunlar/chameleon/19.jpg"),require("@/assets/img/oyunlar/chameleon/20.jpg")],
 			oyun:{"id":2,"image": require('@/assets/img/oyunlar/bukalemun.png'),"zorluk": "Zorluk: Başlangıç","link":"/bukalemun","isim": "Bukalemun","icerik": "Renkleri ayırt edebilmek için bilgisayarı eğitin. Daha sonra rengini arka planına uyacak şekilde değiştiren bir bukalemun yapın."},
+			resimler:{"kırmızı": require("@/assets/img/oyunlar/chameleon/1.jpg"),"mavi": require("@/assets/img/oyunlar/chameleon/11.jpg"),"yeşil": require("@/assets/img/oyunlar/chameleon/7.jpg"),"sarı": require("@/assets/img/oyunlar/chameleon/2.jpg"),"kırmızıBukalemun": require("@/assets/img/oyunlar/chameleon/kBukalemun.png"),"maviBukalemun": require("@/assets/img/oyunlar/chameleon/mBukalemun.jpg"),"yeşilBukalemun": require("@/assets/img/oyunlar/chameleon/yBukalemun.jpg"),"sarıBukalemun": require("@/assets/img/oyunlar/chameleon/sBukalemun.jpg"),}
 		}
 	},
 	methods:{
@@ -340,7 +333,6 @@ export default {
             this.egitimSonu = "";
             this.isEgitimBittiMi = false;
             this.isRenkTrain = true;
-
             setTimeout(() => { 
                 this.veriOnIsleme = "Verinin Ön İşlemesi.";
              }, 1000);
