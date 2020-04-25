@@ -37,7 +37,7 @@
 		</div>
 		
 		<div v-if="isLoading">
-			<page-head icon="play-fill" title="Titanic"/>
+			<page-head icon="play-fill" title="Akıllı Sınıf"/>
 			<!-- Secenekler -->
 			<div class="container-fluid flex-grow-1 container-p-y" v-if="secenekler">
 				<div class="row">
