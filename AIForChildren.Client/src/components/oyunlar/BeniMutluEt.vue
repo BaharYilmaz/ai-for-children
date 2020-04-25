@@ -221,13 +221,13 @@
 					<b-modal id="modalSec" size="lg" title="Lütfen bir resim seçin!" ok-only>
 						<div class="row justify-content-center">
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=testMutlu alt="mutlu" class="img-thumbnail">
+								<img :src=resimler.testMutlu alt="mutlu" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim1">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=testMutsuz alt="mutsuz" class="img-thumbnail">
+								<img :src=resimler.testMutsuz alt="mutsuz" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-primary" @click="secim2">Seç</button>
 								</div>

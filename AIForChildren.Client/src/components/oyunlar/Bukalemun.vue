@@ -202,25 +202,25 @@
 					<b-modal id="modalSec" size="lg" title="Lütfen bir resim seçin!" ok-only>
 						<div class="row justify-content-center">
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=kırmızı alt="kırmızı" class="img-thumbnail">
+								<img :src=resimler.kırmızı alt="kırmızı" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim1">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=sarı alt="sarı" class="img-thumbnail">
+								<img :src=resimler.sarı alt="sarı" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim2">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=yeşil alt="yeşil" class="img-thumbnail">
+								<img :src=resimler.yeşil alt="yeşil" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim3">Seç</button>
 								</div>
 							</div>
 							<div class="col-md-3 ml-5 mr-5">
-								<img :src=mavi alt="mavi" class="img-thumbnail">
+								<img :src=resimler.mavi alt="mavi" class="img-thumbnail">
 								<div class="text-center mt-3 mb-3">
 									<button v-if="!isSecildiMi" class="btn btn-success" @click="secim4">Seç</button>
 								</div>
