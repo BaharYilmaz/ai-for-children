@@ -1,54 +1,40 @@
 <template>
     <div class="container-fluid flex-grow-1 container-p-y">
         <div v-if="!isLoading">
-            <page-head icon="play-fill" title="Başla" />
-            <div class="text-center">
-                <!-- Layout wrapper -->
-                <div class="layout-wrapper layout-2">
-                    <div class="layout-inner">
-                        <!-- Layout container -->
-                        <div class="layout-container">
-                            <!-- Layout content -->
-                            <div class="layout-content">
-                                <!-- Content -->
-                                <div class="container-fluid flex-grow-1 container-p-y">
-                                    <div class="row">
-                                        <!--1 content -->
-                                        <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto" v-bind:key="oyun.id">
-                                            <div class="card mb-4 border-primary ">
-                                                <div class="w-100">
-                                                    <a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover"
-                                                       v-bind:style="{ 'background-image': `url(` + oyun.image + `)` }">
-                                                        <div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
-                                                            <div class="flex-shrink-1">
-                                                                <span class="badge badge-primary">{{ oyun.zorluk }}</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h5 class="mb-3"><a v-bind:href="oyun.link" class="text-body">{{ oyun.isim }}</a></h5>
-                                                    <p class="text-muted mb-3">{{oyun.icerik}}</p>
-                                                    <button class="btn btn-outline-info" @click="basla">Oyuna Başla</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/1 content -->
-                                    </div>
-                                    <hr class="border-light mt-2 mb-4">
-                                </div>
-                                <!-- / Content -->
-                            </div>
-                            <!-- Layout content -->
-                        </div>
-                        <!-- / Layout container -->
-                    </div>
-                    <!-- Overlay -->
-                </div>
-                <!-- / Layout wrapper -->
-            
-            </div>
-        </div>
+			<page-head icon="play-fill" title="Başla" />
+			<div class="text-center">
+				<!-- Layout wrapper -->
+				<!-- Content --> 
+					<div class="container-fluid flex-grow-1 container-p-y">
+						<div class="row">
+							<!--1 content -->
+							<div class="col-sm-6 col-lg-4 col-xl-3 mx-auto" v-bind:key="oyun.id">
+								<div class="card mb-4 border-primary ">
+									<div class="w-100">
+										<a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover"
+											v-bind:style="{ 'background-image': `url(` + oyun.image + `)` }">
+											<div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
+												<div class="flex-shrink-1">
+													<span class="badge badge-primary">{{ oyun.zorluk }}</span>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="card-body">
+										<h5 class="mb-3"><a v-bind:href="oyun.link" class="text-body">{{ oyun.isim }}</a></h5>
+										<p class="text-muted mb-3">{{oyun.icerik}}</p>
+										<button class="btn btn-outline-info" @click="basla">Oyuna Başla</button>
+									</div>
+								</div>
+							</div>
+							<!--/1 content -->
+						</div>
+						<hr class="border-light mt-2 mb-4">
+					</div>
+					<!-- / Content -->
+				<!-- / Layout wrapper -->
+			</div>
+		</div>
         
         <div v-if="isLoading">
             <page-head icon="play-fill" title="Seçmen Şapka"/>

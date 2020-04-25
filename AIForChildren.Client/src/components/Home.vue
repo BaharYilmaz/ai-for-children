@@ -62,6 +62,7 @@ export default {
               {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Sıralama Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
               {"id":8,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın."},
               {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir Python programı oluşturun.Bir bilgisayara sonuçları tahmin etmesini öğretin."},
+              {"id":10,"image": require('@/assets/img/oyunlar/facelock.png'),"zorluk": "Zorluk: Başlangıç","link":"/yüzkilidi","isim": "Yüz Kilidi","icerik": "Scratch'ta yüzünüzü tanıdığında kilidi açılan bir telefon yapın. Bilgisayara yüzleri tanımasını öğretin"},
           ],
       }
        

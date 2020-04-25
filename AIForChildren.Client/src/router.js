@@ -16,6 +16,7 @@ import OkulKutuphane from "./components/oyunlar/OkulKütüphane.vue"
 import SapkaSıralama from "./components/oyunlar/SapkaSıralama.vue"
 import Titanic from "./components/oyunlar/Titanic.vue"
 import AkıllıSınıf from "./components/oyunlar/AkıllıSınıf.vue"
+import FaceLock from "./components/oyunlar/FaceLock.vue"
 
 
 //Router
@@ -34,8 +35,8 @@ export const router =new VueRouter({
       {path: "/benimutluet", component: BeniMutluEt },
       {path: "/okulkütüphane", component: OkulKutuphane},
       {path: "/sapkasıralama", component: SapkaSıralama },
-      {path: "/akıllısınıf", component: AkıllıSınıf},      
-
+      {path: "/akıllısınıf", component: AkıllıSınıf},
+      {path: "/yüzkilidi", component: FaceLock},
     ],
     mode:"history"
   })

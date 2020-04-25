@@ -4,50 +4,38 @@
 			<page-head icon="play-fill" title="Başla" />
 			<div class="text-center">
 				<!-- Layout wrapper -->
-				<div class="layout-wrapper layout-2">
-					<div class="layout-inner">
-						<!-- Layout container -->
-						<div class="layout-container">
-							<!-- Layout content -->
-							<div class="layout-content">
-								<!-- Content --> 
-								<div class="container-fluid flex-grow-1 container-p-y">
-									<div class="row">
-										<!--1 content -->
-										<div class="col-sm-6 col-lg-4 col-xl-3 mx-auto" v-bind:key="oyun.id">
-											<div class="card mb-4 border-primary ">
-												<div class="w-100">
-													<a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover"
-														v-bind:style="{ 'background-image': `url(` + oyun.image + `)` }">
-														<div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
-															<div class="flex-shrink-1">
-																<span class="badge badge-primary">{{ oyun.zorluk }}</span>
-															</div>
-														</div>
-													</a>
-												</div>
-												<div class="card-body">
-													<h5 class="mb-3"><a v-bind:href="oyun.link" class="text-body">{{ oyun.isim }}</a></h5>
-													<p class="text-muted mb-3">{{oyun.icerik}}</p>
-													<button class="btn btn-outline-info" @click="basla">Oyuna Başla</button>
+				<!-- Content --> 
+					<div class="container-fluid flex-grow-1 container-p-y">
+						<div class="row">
+							<!--1 content -->
+							<div class="col-sm-6 col-lg-4 col-xl-3 mx-auto" v-bind:key="oyun.id">
+								<div class="card mb-4 border-primary ">
+									<div class="w-100">
+										<a href="javascript:void(0)" class="card-img-top d-block ui-rect-60 ui-bg-cover"
+											v-bind:style="{ 'background-image': `url(` + oyun.image + `)` }">
+											<div class="d-flex justify-content-between align-items-end ui-rect-content p-3">
+												<div class="flex-shrink-1">
+													<span class="badge badge-primary">{{ oyun.zorluk }}</span>
 												</div>
 											</div>
-										</div>
-										<!--/1 content -->
+										</a>
 									</div>
-									<hr class="border-light mt-2 mb-4">
+									<div class="card-body">
+										<h5 class="mb-3"><a v-bind:href="oyun.link" class="text-body">{{ oyun.isim }}</a></h5>
+										<p class="text-muted mb-3">{{oyun.icerik}}</p>
+										<button class="btn btn-outline-info" @click="basla">Oyuna Başla</button>
+									</div>
 								</div>
-								<!-- / Content -->
 							</div>
-							<!-- Layout content -->
+							<!--/1 content -->
 						</div>
-						<!-- / Layout container -->
+						<hr class="border-light mt-2 mb-4">
 					</div>
-					<!-- Overlay -->
-				</div>
+					<!-- / Content -->
 				<!-- / Layout wrapper -->
 			</div>
 		</div>
+		
 		<div v-if="isLoading">
 			<page-head icon="play-fill" title="Titanic"/>
 			<!-- Secenekler -->
@@ -85,76 +73,14 @@
 				<b-button class="mt-2 mb-2" block variant="danger"><b>İpucu!! Unutmayın her komut için 6 cümle olacak. Eksik olmasın. :)</b></b-button>
 				<main class="flexbox" v-bind:style="{ 'width': '100%'}">
                     <Board id="board-1">
-                        <Card id="card-5" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Bugün hava çok sıcak.</p>
-                        </Card>
-                        <Card id="card-6" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                    		<p>Yazdıklarımı göremiyorum.</p>
-                        </Card>
-						<Card id="card-7" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Işığı kapatabiliriz.</p>
-                        </Card>
-                        <Card id="card-8" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Vantilatörü kapatır mısın?</p>
-                        </Card>
-						<Card id="card-9" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Odam çok aydınlık.</p>
-                        </Card>
-						<Card id="card-10" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Hava 40 derece.</p>
-                        </Card>
-                        <Card id="card-11" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>İçeri soğuk.</p>
-                        </Card>
-                        <Card id="card-12" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Kalemimi bulamıyorum ışığı açar mısın?</p>
-                        </Card>
-					</Board>
-				</main>
-				<main class="flexbox" v-bind:style="{ 'width': '100%'}">
-                    <Board id="board-6">	
-                        <Card id="card-13" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Kedi üşüyor.</p>
-                        </Card>
-                        <Card id="card-14" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                    		<p>Babam terlemiş.</p>
-                        </Card>
-						<Card id="card-15" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Evde gelince lambaları aç.</p>
-                        </Card>
-                        <Card id="card-16" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Uyuyamıyorum vantilatörü kapatır mısın?</p>
-                        </Card>
-						<Card id="card-17" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Evden çıkarken ışıkları kapat.</p>
-                        </Card>
-						<Card id="card-18" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Düşmemek için ışkları açmalısın.</p>
-                        </Card>
-					</Board>
-				</main>
-				<main class="flexbox" v-bind:style="{ 'width': '100%'}">
-                    <Board id="board-7">
-                        <Card id="card-19" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Kıyafetlerin kurumasını için vantilatörü aç.</p>
-                        </Card>
-                        <Card id="card-20" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Film izlerken ışıkları kapatalım mı?</p>
-                        </Card>
-                        <Card id="card-21" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Hareket edersen otomatik ışık açılır.</p>
-                        </Card>
-						<Card id="card-22" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Ekmek fırınında vantilatör hep açıktır.</p>
-                        </Card>
-                        <Card id="card-23" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Mutfakta kimse yok ışığı kapatalım.</p>
-                        </Card>
-                        <Card id="card-24" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
-                            <p>Işığı açarsan içerideki civcivleri görürsün.</p>
-                        </Card>
+						<div class="siralama"  v-for="kart in kartlar"  v-bind:key="kart.id">
+							<Card v-bind:id="kart.cardId" draggable="true" v-bind:style="{ 'background-color': 'lightgreen'}">
+								<p>{{kart.icerik}}</p>
+							</Card>
+						</div>
                     </Board>
 				</main>
+
 				<main class="flexbox">
 					<div class="col-3">
 						<b-button class="mt-2 mb-2" block variant="warning"><b>Vantilatörü Aç</b></b-button>
@@ -423,7 +349,11 @@ export default {
 			secim5Secildi: false,
 			tekSonuc: false,
             oyun: {"id":8,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın.",},
-            resimler: {"openFan": require('@/assets/img/oyunlar/akilliSinif/openFan.gif'),"closeFan": require('@/assets/img/oyunlar/akilliSinif/closeFan.png'),"openLamb": require('@/assets/img/oyunlar/akilliSinif/openLamb.gif'),"closeLamb": require('@/assets/img/oyunlar/akilliSinif/closeLamb.png'),"hata": require('@/assets/img/oyunlar/akilliSinif/hata.gif'),}        
+			resimler: {"openFan": require('@/assets/img/oyunlar/akilliSinif/openFan.gif'),"closeFan": require('@/assets/img/oyunlar/akilliSinif/closeFan.png'),"openLamb": require('@/assets/img/oyunlar/akilliSinif/openLamb.gif'),"closeLamb": require('@/assets/img/oyunlar/akilliSinif/closeLamb.png'),"hata": require('@/assets/img/oyunlar/akilliSinif/hata.gif'),},
+			kartlar:[{"cardId":"card-5","icerik":"Bugün hava çok sıcak."},{"cardId":"card-6","icerik":"Yazdıklarımı göremiyorum."},{"cardId":"card-7","icerik":"Vantilatör bozulacak, kapatabiliriz."},{"cardId":"card-8","icerik":"Vantilatörü kapatır mısın?"},{"cardId":"card-9","icerik":"Odam yeterince aydınlık."},
+				{"cardId":"card-10","icerik":"Hava 40 derece."},{"cardId":"card-11","icerik":"İçeri soğuk."},{"cardId":"card-12","icerik":"Kalemimi bulamıyorum ışığı açar mısın?"},{"cardId":"card-13","icerik":"Kedi üşüyor."},{"cardId":"card-14","icerik":"Yaz aylarında vantilatör hep açıktır."},{"cardId":"card-15","icerik":"Evde gelince lambaları aç."},
+				{"cardId":"card-16","icerik":"Uyuyamıyorum vantilatörü kapatır mısın?"},{"cardId":"card-17","icerik":"Evden çıkarken ışıkları kapat."},{"cardId":"card-18","icerik":"Düşmemek için ışkları açmalısın."},{"cardId":"card-19","icerik":"Kıyafetlerin kurumasını için vantilatörü aç"},{"cardId":"card-20","icerik":"Film izlerken ışıkları kapatalım mı?"},
+				{"cardId":"card-21","icerik":"Hareket edersen otomatik ışık açılır."},{"cardId":"card-22","icerik":"Ekmek fırınında vantilatör hep açıktır."},{"cardId":"card-23","icerik":"Mutfakta kimse yok ışığı kapatalım."},{"cardId":"card-24","icerik":"Işığı açarsan içerideki civcivleri görürsün."},]
         }
     },
     methods: {
@@ -557,6 +487,7 @@ body {
     background-color: #313131;
     margin-top: 3px;
 	margin-bottom: 3px;
+	overflow-x: auto;
 }
 .flexbox .board .card{
     /*padding: flex;*/
