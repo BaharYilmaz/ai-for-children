@@ -73,7 +73,6 @@
             <b-button class="mt-2 mb-2" block variant="success"><b>Makineye nesneleri öğretelim. Seçtiğiniz resimler mümkün olduğunca birbirinden farklı olsun.</b></b-button>
                 <div class="row justify-content-center">
                     <!-- Mutlu -->
-                    
                     <div class="card border-info mb-3 bg-dark col-md-2 ml-2 mr-2 mt-2" v-for="(renk, index) in carOrCup" :key="index">
                         <div class="form-group btn-sm btn-success mt-2">
                             <select class="form-control btn-success " id="sel1">

@@ -351,7 +351,7 @@
                 secim4Secildi: false,
                 secim3Secildi: false,
                 tekSonuc: false,
-                oyun:  {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Sıralama Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
+                oyun:  {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Seçmen Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
             }
         },
         methods: {

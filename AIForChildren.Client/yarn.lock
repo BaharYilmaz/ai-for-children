@@ -7851,6 +7851,11 @@ vue-circular-count-down-timer@^1.0.4:
     core-js "^2.6.5"
     vue "^2.6.10"
 
+vue-custom-range-slider@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue-custom-range-slider/-/vue-custom-range-slider-0.2.1.tgz#bb73b38186dcb411d94717ca6b9164a1008b1437"
+  integrity sha512-W1/6C6qcK4jZB6lQO9LxDjDj6jb9J6UKkom3dnNlO9TpOzZRW0jPIbwELKWWA9XTXYEUjn5yTrFd3YUXYlx8Hw==
+
 vue-eslint-parser@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.0.0.tgz#a4ed2669f87179dedd06afdd8736acbb3a3864d6"

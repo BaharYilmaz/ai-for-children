@@ -16,6 +16,7 @@
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-circular-count-down-timer": "^1.0.4",
+    "vue-custom-range-slider": "^0.2.1",
     "vue-notification": "^1.3.20",
     "vue-router": "^3.1.6",
     "vue-server-renderer": "^2.6.10",
