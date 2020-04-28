@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AIForChildren.Base;
 using AIForChildren.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,19 +11,21 @@ namespace AIForChildren.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GameController : ControllerBase
+    public class GameController : ApiController
     {
         private IAppRepository _appRepository;
         public GameController(IAppRepository appRepository)
         {
             _appRepository = appRepository;
         }
-
+        
+        
         //https://localhost:44358/api/game
-        public ActionResult OyunListele()
+        [HttpGet("oyunListele")]
+        public async Task<IActionResult> OyunListele()
         {
-            var oyunListesi = _appRepository.OyunListele();
-            return Ok(oyunListesi);
+            // var oyunListesi = _appRepository.OyunListele();
+            return Success("Merhaba, Ben bilgisayar senden öğreneceğim çok şey var lütfen beni eğit.",code:200);
 
         }
 
