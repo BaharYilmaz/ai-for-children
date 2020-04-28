@@ -1,32 +1,80 @@
-# ai-for-children
-Çocukların yapay zeka öğrenimi için oyunlar içerir.
+<h1 align="center">Welcome to ai-for-children 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/BaharYilmaz/ai-for-children/blob/master/README.md" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/BaharYilmaz/ai-for-children/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  </a>
+</p>
 
+> Çocukların yapay zeka öğrenimi için oyunlar içerir.
 
+### 🏠 [Homepage](https://github.com/BaharYilmaz/ai-for-children)
 
-----------------------------------------------
-## Bu alan proje public olduğunda silinecektir.
+### ✨ Demo
+<p align="center">
+<a href="https://gifyu.com/image/l5dW"><img src="https://s4.gifyu.com/images/Tam.gif" alt="Tam.gif" border="0" /></a>
+</p>
+## Install
 
-## Veritabanı bağlantı işlemi
+```sh
+cd AIForChildren.Client
 
-Öncelikle Server Explorer kısmından kullanacağımız azure hesabını ekleyeceğiz.
-![serverEx](https://user-images.githubusercontent.com/48556212/78459300-ad35bd00-76c0-11ea-856d-46de0665b9fc.PNG)
+yarn install
+```
 
-- Kullanıncı Adi : 172802013@ogr.cbu.edu.tr
-- Şifre : 59P57XZ
+## Usage
 
-**Not: hesap sahibi şifresini değiştirme hakkına sahiptir.
+```sh
+cd AIForChildren.Client
 
+yarn serve
+```
 
-Sql Server Object Explorer bölümünde tekrar giriş yapmanız istenebilir.
+## Run tests
 
-![Ekran Görüntüsü (77)](https://user-images.githubusercontent.com/48556212/78459414-714f2780-76c1-11ea-9285-3783c6a0f33f.png)
+```sh
+cd AIForChildren.WebApi
 
-Giriş yaptıktan sonra gelen ekranda gerekli veritabanı seçilerek sunucuya bağlama işlemi yapılır.
+dotnet test
+```
+### Expected Output
 
-![login](https://user-images.githubusercontent.com/48556212/78459443-b4a99600-76c1-11ea-91f8-fb2c353a394d.PNG)
-- user : AiForChildrenAdmin
-- Password : 924884Aa!
+<img width="1679" alt="Test" src="https://user-images.githubusercontent.com/31216880/80509145-a88fbc00-8981-11ea-8c93-f01e773a7f20.png">
 
-Artık veritabanı uygulamaya bağlanmış durumdadır.
+## Author
 
-----------------------------------------------
+👤 **Mustafa Taha**
+
+* Github: [@mtsoydan](https://github.com/mtsoydan)
+
+👤 **Bahar**
+
+* Github: [@BaharYilmaz](https://github.com/BaharYilmaz)
+
+👤 **Zişan**
+
+* Github: [@zisankarsatar](https://github.com/zisankarsatar)
+
+👤 **Berkan**
+
+* Website: https://berkansasmaz.com
+* Twitter: [@berkansasmazz](https://twitter.com/berkansasmazz)
+* Github: [@berkansasmaz](https://github.com/berkansasmaz)
+* LinkedIn: [@berkansasmaz](https://linkedin.com/in/berkansasmaz)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/berkansasmaz/ai-for-children/issues). You can also take a look at the [contributing guide](https://dev.to/janessatran/a-beginner-s-guide-to-contributing-to-open-source-4fen).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Zişan, Bahar, ,Taha, Berkan](https://github.com/BaharYilmaz/ai-for-children).<br />
+This project is [MIT](https://github.com/BaharYilmaz/ai-for-children/blob/master/LICENSE) licensed.
