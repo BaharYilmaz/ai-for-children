@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to ai-for-children 👋</h1>
+<h1 align="center">Welcome to AI For Children 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/BaharYilmaz/ai-for-children/blob/master/README.md" target="_blank">
@@ -12,12 +12,13 @@
 
 > Çocukların yapay zeka öğrenimi için oyunlar içerir.
 
-### 🏠 [Homepage](https://github.com/BaharYilmaz/ai-for-children)
-
 ### ✨ Demo
 <p align="center">
-<a href="https://gifyu.com/image/l5dW"><img src="https://s4.gifyu.com/images/Tam.gif" alt="Tam.gif" border="0" /></a>
+
+[![Tam.gif](https://s4.gifyu.com/images/Tam.gif)](https://gifyu.com/image/l5dW)
+
 </p>
+
 ## Install
 
 ```sh
