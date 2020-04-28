@@ -250,11 +250,13 @@
 </template>
 
 <script>
-export default {
+    import service from "../../services/gamePlay";
+
+    export default {
     
 	data(){
 		return{
-			name:"Bukalemun",
+			name:"FaceLock",
 			isLoading: false,
             secenekler: true,
             isTrain: false,
@@ -278,14 +280,16 @@ export default {
             tumSonuclar: false,
             tekSonuc: false,
 			resimler: [require('@/assets/img/oyunlar/facelock/1.jpg'),require('@/assets/img/oyunlar/facelock/2.jpg'),require('@/assets/img/oyunlar/facelock/3.jpg'),require('@/assets/img/oyunlar/facelock/4.jpg'),require('@/assets/img/oyunlar/facelock/5.png'),require('@/assets/img/oyunlar/facelock/6.png'),require('@/assets/img/oyunlar/facelock/7.jpg'),require('@/assets/img/oyunlar/facelock/8.jpg'),require('@/assets/img/oyunlar/facelock/9.jpg'),require('@/assets/img/oyunlar/facelock/10.jpg'),require('@/assets/img/oyunlar/facelock/11.png'),require('@/assets/img/oyunlar/facelock/12.png'),require('@/assets/img/oyunlar/facelock/13.jpg'),require('@/assets/img/oyunlar/facelock/14.jpg'),require('@/assets/img/oyunlar/facelock/15.png')],     
-			oyun: {"id":10,"image": require('@/assets/img/oyunlar/facelock.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/yüzkilidi","isim": "Yüz Kilidi","icerik": "Scratch'ta yüzünüzü tanıdığında kilidi açılan bir telefon yapın. Bilgisayara yüzleri tanımasını öğretin"},
+			oyun: {"id":10,"image": require('@/assets/img/oyunlar/facelock.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/yüzkilidi","isim": "Yüz Kilidi","icerik": "Yüzünüzü tanıdığında kilidi açılan bir telefon yapın. Bunun için önce bilgisayara yüzleri tanımasını öğretin."},
 			test:{"test1":require("@/assets/img/oyunlar/facelock/2.jpg"),"test2":require("@/assets/img/oyunlar/facelock/14.jpg"),"hata":require("@/assets/img/oyunlar/facelock/hata.png"),"basarili":require("@/assets/img/oyunlar/facelock/basarili.jpg"),},
 		}
 	},
 	methods:{
-		basla(){
-			this.isLoading=true;
-		},
+      async basla(){
+          this.isLoading=true;
+          var result = await service.play();
+          console.log(result);
+      },
 		train(){
             this.secenekler = false;
             this.isTrain = true;

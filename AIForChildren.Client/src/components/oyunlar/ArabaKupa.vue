@@ -274,11 +274,13 @@
 </template>
 
 <script>
+    import service from "../../services/gamePlay";
+    
     export default {
         
         data(){
             return{
-                name:"Araba veya Kupa",
+                name:"ArabaveyaKupa",
                 isLoading: false,
                 secenekler: true,
                 isTrain: false,
@@ -304,13 +306,15 @@
                 tumSonuclar: false,
                 tekSonuc: false,
                 carOrCup: [require("@/assets/img/oyunlar/carorcup/1.jpg"),require("@/assets/img/oyunlar/carorcup/17.jpg"),require("@/assets/img/oyunlar/carorcup/3.jpg"),require("@/assets/img/oyunlar/carorcup/11.jpg"),require("@/assets/img/oyunlar/carorcup/6.jpg"),require("@/assets/img/oyunlar/carorcup/7.jpg"),require("@/assets/img/oyunlar/carorcup/20.jpg"),require("@/assets/img/oyunlar/carorcup/8.jpg"),require("@/assets/img/oyunlar/carorcup/19.jpg"),require("@/assets/img/oyunlar/carorcup/2.jpg"),require("@/assets/img/oyunlar/carorcup/9.jpg"),require("@/assets/img/oyunlar/carorcup/10.jpg"),require("@/assets/img/oyunlar/carorcup/12.jpg"),require("@/assets/img/oyunlar/carorcup/13.jpg"),require("@/assets/img/oyunlar/carorcup/14.jpg"),require("@/assets/img/oyunlar/carorcup/4.jpg"),require("@/assets/img/oyunlar/carorcup/15.jpg"),require("@/assets/img/oyunlar/carorcup/5.jpg"),require("@/assets/img/oyunlar/carorcup/16.jpg"),require("@/assets/img/oyunlar/carorcup/18.jpg")],
-                oyun: {"id":1,"image": require('@/assets/img/oyunlar/araba.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/arabaveyakupa","isim": "Araba veya Kupa","icerik": "Fotoğrafları gruplara ayırabilmek için bilgisayarı eğitin. Daha sonra Nesneleri nasıl tanıdığımızı görmek için test edin."},
+                oyun: {"id":1,"image": require('@/assets/img/oyunlar/araba.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/arabaveyakupa","isim": "Araba veya Kupa","icerik": "Fotoğrafları gruplara ayırabilmek için bilgisayarı eğitin. Daha sonra nesneleri nasıl tanıdığımızı görmek için test edin."},
                 resimler:{"car1":require("@/assets/img/oyunlar/carorcup/Car/car5.jpg"),"car2":require("@/assets/img/oyunlar/carorcup/Car/car7.jpg"),"kupa1":require("@/assets/img/oyunlar/carorcup/Cup/cup3.jpg"),"kupa2":require("@/assets/img/oyunlar/carorcup/Cup/cup6.jpg"),"testCup":require("@/assets/img/oyunlar/carorcup/cupAll1.jpg"),"testCup2":require("@/assets/img/oyunlar/carorcup/cupAll2.jpg"),"testCar":require("@/assets/img/oyunlar/carorcup/carAll1.jpg"),"testCar2":require("@/assets/img/oyunlar/carorcup/carAll2.jpg")},
             }
         },
         methods:{
-            basla(){
+            async basla(){
                 this.isLoading=true;
+                var result = await service.play();
+                console.log(result);
             },
             train(){
                 this.secenekler = false;

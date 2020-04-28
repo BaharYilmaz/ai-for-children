@@ -306,7 +306,9 @@
 </template>
 
 <script>
-export default {
+    import service from "../../services/gamePlay";
+
+    export default {
 
     data(){
         return {
@@ -339,8 +341,10 @@ export default {
         }
     },
     methods: {
-        basla(){
-            this.isLoading = true;
+        async basla(){
+            this.isLoading=true;
+            var result = await service.play();
+            console.log(result);
         },
         train(){
             this.secenekler = false;

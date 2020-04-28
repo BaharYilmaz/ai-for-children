@@ -98,14 +98,13 @@
 							</div>
 						</div>
 						<div class="card border-info mb-3 bg-success col-md-2 ml-2 mr-2 mt-2">
-							<b-button block variant="warning"><b>ORNEK KİTAP</b></b-button>
+							<b-button class="mt-2 mb-2" block variant="warning"><b>ÖRNEK KİTAP</b></b-button>
 							<b-button block variant="warning"><img :src=test.resim class="img-thumbnail"></b-button>
 							<b-button block variant="warning">{{test.resimR}}</b-button>
 							<b-button block variant="warning">{{test.resimSatır}}</b-button>
-							<b-button block variant="warning">{{test.resimSayfa}}</b-button>
+							<b-button class="mt-2 mb-2" block variant="warning">{{test.resimSayfa}}</b-button>
 						</div>
 					</div>
-					<hr class="border-dark mt-2 mb-2">
 				</div>
 				<div class="text-center">
 					<b-button block variant="success" class="text-dark" v-b-modal.modalEgit @click="libraryTrain">Eğit</b-button>
@@ -281,13 +280,15 @@
 <script>
 import CustomSlider from "vue-custom-range-slider";
 import "vue-custom-range-slider/dist/vue-custom-range-slider.css";
+import service from "../../services/gamePlay";
+
 export default {
 	components: {
 		CustomSlider
 	},
 	data(){
 		return{
-			name:"Okul Kütüphane",
+			name:"OkulKütüphane",
 			isLoading: false,
             secenekler: true,
             isTrain: false,
@@ -312,8 +313,8 @@ export default {
             tumSonuclar: false,
 			tekSonuc: false,
 			resimler: {"son1":require('@/assets/img/oyunlar/library/son1.jpg'),"son2":require('@/assets/img/oyunlar/library/son2.jpg'),"son3":require('@/assets/img/oyunlar/library/son3.jpg'),"test1":require('@/assets/img/oyunlar/library/4.jpg'),"test2":require('@/assets/img/oyunlar/library/5.jpg'),"test3":require('@/assets/img/oyunlar/library/6.jpg'),},
-			oyun:{"id":3,"image": require('@/assets/img/oyunlar/kutuphane2.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/okulkütüphane","isim": "Okul Kütüphanesi","icerik": "Scratch'da okuma kitabının kime uygun olabileceğini öneren bir okul kütüphanecisi oluşturun."},              
-			kitaplar:["Kitap A","Kitap B","Kitap C"],
+			oyun:{"id":3,"image": require('@/assets/img/oyunlar/kutuphane2.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/okulkütüphane","isim": "Okul Kütüphanesi","icerik": "Okuma kitabının kime uygun olabileceğini öneren bir okul kütüphanecisi oluşturun. Daha sonra kitabın kimlere uygun olabileceğini test edin."},
+        kitaplar:["Kitap A","Kitap B","Kitap C"],
 			oyunlar:[
 				{"id":1,"baslik": "Başlangıç Düzey","icerik":"Başlangıç düzeyi öğrencilerin okumaya ilk adım attığı zamandır. Bundan dolayı okumayı teşvik edici görseller ve sayfalar, satırlar onları sıkmayacak kadar az olmalıdır.","resimS":"Resim Sayısı: 10-30 arasında olmalı.","satırS":"Satır Sayısı: 50 dan az olmalı.","sayfaS":"Sayfa Sayısı: 30 dan  az olmalı.","resim":require("@/assets/img/oyunlar/library/1.jpg"),"resimR":"Resim Sayısı: 20 ","resimSatır":"Satır Sayısı: 40","resimSayfa":"Sayfa Sayısı:25"},
 				{"id":2,"baslik": "Orta Düzey","icerik":"Orta düzey artık öğrencilerin rahatlıkta kitap okuyabileceği, genel kültür edinebilecği , resimler daha az sayfa sayısı ve satır sayısının fazla olduğu kitaplardır.","resimS":"Resim Sayısı: 10-20 arasında olmalı.","satırS":"Satır Sayısı: 50-150 arasında olmalı.","sayfaS":"Sayfa Sayısı: 50-100 arasında olmalı.","resim":require("@/assets/img/oyunlar/library/2.jpg"),"resimR":"Resim Sayısı: 15 ","resimSatır":"Satır Sayısı: 100","resimSayfa":"Sayfa Sayısı: 75"},
@@ -322,9 +323,11 @@ export default {
 		}
 	},
 	methods:{
-		basla(){
-			this.isLoading=true;
-		},
+      async basla(){
+          this.isLoading=true;
+          var result = await service.play();
+          console.log(result);
+      },
 		train(){
             this.secenekler = false;
             this.isTrain = true;

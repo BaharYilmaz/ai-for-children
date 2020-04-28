@@ -320,8 +320,10 @@
 <script>
     import Board from "./DragDrop/Board"
     import Card from "./DragDrop/Card"
+    import service from "../../services/gamePlay";
+
     export default {
-        name:"Seçmen Şapka",
+        name:"SecmenŞapka",
         components:{
             Board,
             Card
@@ -351,12 +353,14 @@
                 secim4Secildi: false,
                 secim3Secildi: false,
                 tekSonuc: false,
-                oyun:  {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Seçmen Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun.Dil kullanımını tanımak için bir bilgisayara öğretin."},
+                oyun:   {"id":7,"image": require('@/assets/img/oyunlar/sapka.jpg'),"zorluk": "Zorluk: Orta Seviye","link":"/sapkasıralama","isim": "Seçmen Şapka","icerik": "Harry Potter'da olduğu gibi, söylediklerinize dayanarak sizi bir okul evine koyan bir Sıralama Şapkası oluşturun."},
             }
         },
         methods: {
-            basla(){
-                this.isLoading = true;
+            async basla(){
+                this.isLoading=true;
+                var result = await service.play();
+                console.log(result);
             },
             train(){
                 this.secenekler = false;

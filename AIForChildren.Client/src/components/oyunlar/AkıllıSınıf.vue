@@ -316,6 +316,8 @@
 <script>
 import Board from "./DragDrop/Board"
 import Card from "./DragDrop/Card"
+import service from "../../services/gamePlay";
+
 export default {
     name:"AkıllıSınıf",
     components:{
@@ -341,24 +343,26 @@ export default {
             veriTestSon: "",
             testSonuc: "",
             isSecildiMi: false,
-			onSec: false,
+						onSec: false,
             secim1Secildi: false,
-			secim2Secildi: false,
-			secim3Secildi: false,
-			secim4Secildi: false,
-			secim5Secildi: false,
-			tekSonuc: false,
-            oyun: {"id":8,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Scratch'da sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın.",},
-			resimler: {"openFan": require('@/assets/img/oyunlar/akilliSinif/openFan.gif'),"closeFan": require('@/assets/img/oyunlar/akilliSinif/closeFan.png'),"openLamb": require('@/assets/img/oyunlar/akilliSinif/openLamb.gif'),"closeLamb": require('@/assets/img/oyunlar/akilliSinif/closeLamb.png'),"hata": require('@/assets/img/oyunlar/akilliSinif/hata.gif'),},
-			kartlar:[{"cardId":"card-5","icerik":"Bugün hava çok sıcak."},{"cardId":"card-6","icerik":"Yazdıklarımı göremiyorum."},{"cardId":"card-7","icerik":"Vantilatör bozulacak, kapatabiliriz."},{"cardId":"card-8","icerik":"Vantilatörü kapatır mısın?"},{"cardId":"card-9","icerik":"Odam yeterince aydınlık."},
-				{"cardId":"card-10","icerik":"Hava 40 derece."},{"cardId":"card-11","icerik":"İçeri soğuk."},{"cardId":"card-12","icerik":"Kalemimi bulamıyorum ışığı açar mısın?"},{"cardId":"card-13","icerik":"Kedi üşüyor."},{"cardId":"card-14","icerik":"Yaz aylarında vantilatör hep açıktır."},{"cardId":"card-15","icerik":"Evde gelince lambaları aç."},
-				{"cardId":"card-16","icerik":"Uyuyamıyorum vantilatörü kapatır mısın?"},{"cardId":"card-17","icerik":"Evden çıkarken ışıkları kapat."},{"cardId":"card-18","icerik":"Düşmemek için ışkları açmalısın."},{"cardId":"card-19","icerik":"Kıyafetlerin kurumasını için vantilatörü aç"},{"cardId":"card-20","icerik":"Film izlerken ışıkları kapatalım mı?"},
-				{"cardId":"card-21","icerik":"Hareket edersen otomatik ışık açılır."},{"cardId":"card-22","icerik":"Ekmek fırınında vantilatör hep açıktır."},{"cardId":"card-23","icerik":"Mutfakta kimse yok ışığı kapatalım."},{"cardId":"card-24","icerik":"Işığı açarsan içerideki civcivleri görürsün."},]
-        }
+						secim2Secildi: false,
+						secim3Secildi: false,
+						secim4Secildi: false,
+						secim5Secildi: false,
+						tekSonuc: false,
+		        oyun: {"id":8,"image": require('@/assets/img/oyunlar/smart.png'),"zorluk": "Zorluk: Başlangıç","link":"/akıllısınıf","isim": "Akıllı Sınıf","icerik": "Sanal cihazları kontrol etmenizi sağlayan bir akıllı asistan oluşturun. Bir bilgisayara komutlarınızın anlamını tanımasını sağlayın."},
+						resimler: {"openFan": require('@/assets/img/oyunlar/akilliSinif/openFan.gif'),"closeFan": require('@/assets/img/oyunlar/akilliSinif/closeFan.png'),"openLamb": require('@/assets/img/oyunlar/akilliSinif/openLamb.gif'),"closeLamb": require('@/assets/img/oyunlar/akilliSinif/closeLamb.png'),"hata": require('@/assets/img/oyunlar/akilliSinif/hata.gif'),},
+						kartlar:[{"cardId":"card-5","icerik":"Bugün hava çok sıcak."},{"cardId":"card-6","icerik":"Yazdıklarımı göremiyorum."},{"cardId":"card-7","icerik":"Vantilatör bozulacak, kapatabiliriz."},{"cardId":"card-8","icerik":"Vantilatörü kapatır mısın?"},{"cardId":"card-9","icerik":"Odam yeterince aydınlık."},
+							{"cardId":"card-10","icerik":"Hava 40 derece."},{"cardId":"card-11","icerik":"İçeri soğuk."},{"cardId":"card-12","icerik":"Kalemimi bulamıyorum ışığı açar mısın?"},{"cardId":"card-13","icerik":"Kedi üşüyor."},{"cardId":"card-14","icerik":"Yaz aylarında vantilatör hep açıktır."},{"cardId":"card-15","icerik":"Evde gelince lambaları aç."},
+							{"cardId":"card-16","icerik":"Uyuyamıyorum vantilatörü kapatır mısın?"},{"cardId":"card-17","icerik":"Evden çıkarken ışıkları kapat."},{"cardId":"card-18","icerik":"Düşmemek için ışkları açmalısın."},{"cardId":"card-19","icerik":"Kıyafetlerin kurumasını için vantilatörü aç"},{"cardId":"card-20","icerik":"Film izlerken ışıkları kapatalım mı?"},
+							{"cardId":"card-21","icerik":"Hareket edersen otomatik ışık açılır."},{"cardId":"card-22","icerik":"Ekmek fırınında vantilatör hep açıktır."},{"cardId":"card-23","icerik":"Mutfakta kimse yok ışığı kapatalım."},{"cardId":"card-24","icerik":"Işığı açarsan içerideki civcivleri görürsün."},]
+			        }
     },
     methods: {
-        basla(){
+        async basla(){
             this.isLoading = true;
+		        var result = await service.play();
+		        console.log(result);
         },
         train(){
             this.secenekler = false;
