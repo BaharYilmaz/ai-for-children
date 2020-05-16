@@ -12,12 +12,7 @@
 
 > Çocukların yapay zeka öğrenimi için oyunlar içerir.
 
-### ✨ Demo
-<p align="center">
-
-[![Tam.gif](https://s4.gifyu.com/images/Tam.gif)](https://gifyu.com/image/l5dW)
-
-</p>
+### ✨ [Demo](https://www.youtube.com/watch?v=-Cwh6MJLZpg)
 
 ## Install
 
