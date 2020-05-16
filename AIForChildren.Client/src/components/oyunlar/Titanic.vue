@@ -336,7 +336,9 @@ export default {
 			secim4Secildi: false,
             secim3Secildi: false,
 			tekSonuc: false,
-			oyun: {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir yapay zeka modeli öğretin. Daha sonra kimin hayatta kalabileceğini görün."},
+            oyun: {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"test1": require('@/assets/img/oyunlar/titanic/1.png'),"test2": require('@/assets/img/oyunlar/titanic/2.png'),"test3": require('@/assets/img/oyunlar/titanic/3.png'),"test4": require('@/assets/img/oyunlar/titanic/4.png'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir Python programı oluşturun.Bir bilgisayara sonuçları tahmin etmesini öğretin."},
+    
+            // oyun: {"id":9,"image": require('@/assets/img/oyunlar/titanic.jpg'),"zorluk": "Zorluk: Başlangıç","link":"/titanic","isim": "Titanic","icerik": "Titanik'in batmasıyla kimin hayatta kalacağını tahmin edebilecek bir yapay zeka modeli öğretin. Daha sonra kimin hayatta kalabileceğini görün."},
 			kartlar:[{"cardId":"card-5","icerik":"KADIN","style":"red"},{"cardId":"card-6","icerik":"ERKEK","style":"lightgreen"},{"cardId":"card-7","icerik":"ERKEK","style":"red"},{"cardId":"card-8","icerik":"KADIN","style":"lightgreen"},{"cardId":"card-9","icerik":"ERKEK","style":"red"},{"cardId":"card-10","icerik":"ERKEK","style":"lightgreen"},{"cardId":"card-11","icerik":"KADIN","style":"red"},{"cardId":"card-12","icerik":"KADIN","style":"lightgreen"},]
         }
     },
