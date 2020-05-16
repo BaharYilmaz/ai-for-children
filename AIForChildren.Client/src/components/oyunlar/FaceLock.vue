@@ -70,7 +70,7 @@
 
 			<!-- Train -->
 			<div class="container-fluid" v-if="isTrain">
-				<b-button block variant="success"><b>Makineye renkleri öğretelim. Resmilerdeki en yoğun rengi seçelim.</b></b-button>
+				<b-button block variant="success"><b>Makineye Baba Simpson'u öğretelim.</b></b-button>
 				<div class="row justify-content-center">
 					<!-- Mutlu -->
 					<div class="card border-info mb-3 bg-dark col-md-2 ml-2 mr-2 mt-2" v-for="(resim, index) in resimler" :key="index">

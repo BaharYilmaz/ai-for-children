@@ -202,13 +202,13 @@
                             <div class="col-md-3 ml-5 mr-5">
                                 <img :src=resimler.gozluk alt="gozluk" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
-                                    <button v-if="!isSecildiMi" class="btn btn-success" @click="secim2">Seç</button>
+                                    <button v-if="!isSecildiMi" class="btn btn-success" @click="secim1">Seç</button>
                                 </div>
                             </div>
                             <div class="col-md-3 ml-5 mr-5">
                                 <img :src=resimler.telefon alt="telefon" class="img-thumbnail">
                                 <div class="text-center mt-3 mb-3">
-                                    <button v-if="!isSecildiMi" class="btn btn-success" @click="secim4">Seç</button>
+                                    <button v-if="!isSecildiMi" class="btn btn-success" @click="secim2">Seç</button>
                                 </div>
                             </div>
                         </div>
@@ -283,8 +283,6 @@
                 onSec: false,
                 secim1Secildi: false,
                 secim2Secildi: false,
-                secim3Secildi: false,
-                secim4Secildi: false,
                 tumSonuclar: false,
                 tekSonuc: false,
                 suratlar: ["gozluk","telefon","telefon","gozluk","telefon","telefon","gozluk","gozluk","telefon","gozluk","gozluk","telefon","gozluk","gozluk","gozluk","telefon","telefon","gozluk","telefon","telefon"],
@@ -373,14 +371,6 @@
             secim2(){
                 this.isSecildiMi = true;
                 this.secim2Secildi = true;
-            },
-            secim3(){
-                this.isSecildiMi = true;
-                this.secim3Secildi = true;
-            },
-            secim4(){
-                this.isSecildiMi = true;
-                this.secim4Secildi = true;
             },
             modalSenSecTestEt(){
                 this.isLoading = true
