@@ -13,7 +13,7 @@
 > Çocukların yapay zeka öğrenimi için oyunlar içerir.
 
 ### ✨ [Demo](https://www.youtube.com/watch?v=-Cwh6MJLZpg)
-[![Demo](https://user-images.githubusercontent.com/31216880/82133453-0e3ecd80-97f5-11ea-9233-42db1b4e4fb7.png)](https://www.youtube.com/watch?v=-Cwh6MJLZpg)
+[![Demo](https://user-images.githubusercontent.com/31216880/82133514-c5d3df80-97f5-11ea-8b60-239d4502fefc.png)](https://www.youtube.com/watch?v=-Cwh6MJLZpg)
 
 
 ## Install
