@@ -28,8 +28,3 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Not
-
-"/", "/login", "/register"  için yollar tanımlı. Erişim açıktır.
-Oyun sayfaları eklenmiştir.
